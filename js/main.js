@@ -79,15 +79,25 @@ $( function() {
   $('.switcher__radio').on('change', function(e){
     console.log($('#roadmap-image').attr('src'))
     $('.root').toggleClass('light-theme');
+    if($('#exchange-interface-3').attr('src') == 'images/exchange-interface-3.png') {
+      $('#exchange-interface-3').attr('src', 'images/exchange-interface-3-light.png');
+    }else{
+      $('#exchange-interface-3').attr('src', 'images/exchange-interface-3.png');
+    }
+    if($('#partner-investror-2').attr('src') == 'images/partner-investror-2.png') {
+      $('#partner-investror-2').attr('src', 'images/partner-investror-2-light.png');
+    }else{
+      $('#partner-investror-2').attr('src', 'images/partner-investror-2.png');
+    }
     if($('#roadmap-image').attr('src') == 'images/roadmap.svg') {
       $('#roadmap-image').attr('src', 'images/raadmap-light.svg');
     }else{
       $('#roadmap-image').attr('src', 'images/roadmap.svg');
     }
-    if($('#tokenomics-diagram').attr('src') == 'images/Frame58.svg') {
-      $('#tokenomics-diagram').attr('src', 'images/Group9739.png');
+    if($('#tokenomics-diagram').attr('src') == 'images/piechart.svg') {
+      $('#tokenomics-diagram').attr('src', 'images/piechart-light.svg');
     }else{
-      $('#tokenomics-diagram').attr('src', 'images/Frame58.svg');
+      $('#tokenomics-diagram').attr('src', 'images/piechart.svg');
     }
     if($('#concordium-logo').attr('src') == 'images/whiteimg20.svg') {
       $('#concordium-logo').attr('src', 'images/img20.svg');

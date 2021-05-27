@@ -1,513 +1,872 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- <link rel="icon" href="/favicon.ico"> -->
-		<link rel="stylesheet" type="text/css" href="css/slick.css">
-		<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
-		<link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css">
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="css/main.css">
-    	<link rel="icon" href="./images/favicon.png" sizes="42x42" />
-		<title>Bictory</title>
-	</head>
-	<body class="root">
-		<header class="header position-fixed w-100">
-			<div class="container">
-				<div class="header__content">
-					<div class="header-content__left">
-						<div class="header-logo__wrapper">
-							<a href="" class="header-logo">
-								<img src="images/logoLight.svg" alt="">
-							</a>
-						</div>
-						<div class="header-menu">
-							<a href="#about" class="header-menu__link">
-								Technology
-							</a>
-							<a href="#products" class="header-menu__link">
-								Products
-							</a>
-							<a href="#roadmap" class="header-menu__link">
-								Roadmap
-							</a>
-							<a href="#tokenomics" class="header-menu__link">
-								Tokenomics
-							</a>
-							<a href="#team" class="header-menu__link">
-								Team
-							</a>
-							<a href="#contact-us" class="header-menu__link">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link rel="icon" href="/favicon.ico"> -->
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="icon" href="./images/favicon.png" sizes="42x42" />
+	<title>Bictory</title>
+</head>
+
+<body class="root">
+	<header class="header position-absolute w-100">
+		<div class="container">
+			<div class="header__content">
+				<div class="header-content__left">
+					<div class="header-logo__wrapper">
+						<a href="" class="header-logo">
+							<img src="images/logoLight.svg" alt="">
+						</a>
+					</div>
+					<div class="header-menu">
+						<a href="#about" class="header-menu__link">
+							Technology
+						</a>
+						<a href="#products" class="header-menu__link">
+							Products
+						</a>
+						<a href="#roadmap" class="header-menu__link">
+							Roadmap
+						</a>
+						<a href="#tokenomics" class="header-menu__link">
+							Tokenomics
+						</a>
+						<a href="#team" class="header-menu__link">
+							Team
+						</a>
+						<!-- <a href="#contact-us" class="header-menu__link">
 								Contact us
+							</a> -->
+						<div class="dropdown show header-dropdown">
+							<a class="header-menu__link" href="#" role="button" id="dropdownMenuLink"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Docs
+								<i class="fas fa-chevron-down"></i>
 							</a>
-							<div class="dropdown show header-dropdown">
-							  <a class="header-menu__link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							    Docs
-							    <i class="fas fa-chevron-down"></i>
-							  </a>
-							  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-							    <a class="dropdown-item" target="_blank" href="https://bictory.io/b_litepaper.pdf">Litepaper</a>
-							    <a class="dropdown-item" target="_blank" href="https://bictory.io/one_pager.pdf">One Pager</a>
-							  </div>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+								<a class="dropdown-item" target="_blank"
+									href="https://bictory.io/b_litepaper.pdf">Litepaper</a>
+								<a class="dropdown-item" target="_blank" href="https://bictory.io/one_pager.pdf">One
+									Pager</a>
 							</div>
-							<div class="header-switch">
+						</div>
+						<!-- <div class="header-switch">
 								<label class="switch">
 								  <input type="checkbox" class="switcher__radio">
 								  <span class="slider round"></span>
 								</label>
+							</div> -->
+					</div>
+				</div>
+				<div class="header-content__right">
+					<div class="dropdown show header-dropdown">
+						<a class="button- button-header" href="#" role="button" id="comingSoon" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">
+							Launching Soon
+						</a>
+						<div class="dropdown-menu dropdown-menu-coming__soon" aria-labelledby="comingSoon">
+							<div class="coming-soon__box">
+								Coming soon
 							</div>
 						</div>
 					</div>
-					<div class="header-content__right">
-						<div class="dropdown show header-dropdown">
-						  <a class="button-" href="#" role="button" id="comingSoon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						    Bictory CEX
-						  </a>
-						  <div class="dropdown-menu dropdown-menu-coming__soon" aria-labelledby="comingSoon">
-						  	<div class="coming-soon__box">
-						    	Coming soon
-						  	</div>
-						  </div>
-						</div>
-						<div class="button-collapse__wrapper">
-							<button class="header-button__collapse">
-								<i class="fas fa-bars"></i>
-							</button>
-						</div>
+					<div class="button-collapse__wrapper">
+						<button class="header-button__collapse">
+							<i class="fas fa-bars"></i>
+						</button>
 					</div>
 				</div>
 			</div>
-		</header>
-		<div class="header-menu--mobile">
-			<button class="header-button__hide">
-				<i class="fas fa-times"></i>
-			</button>
-			<a href="#about" class="header-menu__link">
-				Technology
+		</div>
+	</header>
+	<div class="header-menu--mobile">
+		<button class="header-button__hide">
+			<i class="fas fa-times"></i>
+		</button>
+		<a href="#about" class="header-menu__link">
+			Technology
+		</a>
+		<a href="#products" class="header-menu__link">
+			Products
+		</a>
+		<div class="dropdown show header-dropdown">
+			<a class="header-menu__link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+				aria-haspopup="true" aria-expanded="false">
+				Docs
+				<i class="fas fa-chevron-down"></i>
 			</a>
-			<a href="#products" class="header-menu__link">
-				Products
-			</a>
-			<div class="dropdown show header-dropdown">
-			  <a class="header-menu__link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			    Docs
-			    <i class="fas fa-chevron-down"></i>
-			  </a>
-			  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-			    <a class="dropdown-item" target="_blank" href="https://bictory.io/b_litepaper.pdf">Litepaper</a>
-			    <a class="dropdown-item" target="_blank" href="https://bictory.io/one_pager.pdf">One Pager</a>
-			  </div>
+			<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+				<a class="dropdown-item" target="_blank" href="https://bictory.io/b_litepaper.pdf">Litepaper</a>
+				<a class="dropdown-item" target="_blank" href="https://bictory.io/one_pager.pdf">One Pager</a>
 			</div>
-			<a href="#roadmap" class="header-menu__link">
-				Roadmap
-			</a>
-			<a href="#tokenomics" class="header-menu__link">
-				Tokenomics
-			</a>
-			<!-- <a href="#team" class="header-menu__link">
+		</div>
+		<a href="#roadmap" class="header-menu__link">
+			Roadmap
+		</a>
+		<a href="#tokenomics" class="header-menu__link">
+			Tokenomics
+		</a>
+		<a href="#team" class="header-menu__link">
 				Team
-			</a> -->
-			<a href="#contact-us" class="header-menu__link">
-				Contact us
 			</a>
-		</div>
-		<div class="banner-" id="banner-image">
-			<div class="container">
-				<div class="col col-lg-10 col-12 col__center">
-					<div class="banner-title">
-						Hybrid Exchange and Crowdfunding Platform on Concordium Blockchain.
+		<!-- <a href="#contact-us" class="header-menu__link">
+			Contact us
+		</a> -->
+	</div>
+	<div class="banner- position-relative" id="banner-image">
+		<div class="container">
+			<div class="row h-md-50">
+				<div class="col col-md-7 col-12 h-100 d-flex justify-content-center flex-column">
+					<div>
+						<div class="banner-title">
+							All-in-One Suite for <span class="text-light-green">DeFi</span> and <span
+								class="text-yellow">Crypto</span> Trading.
+						</div>
+						<div class="banner-text">
+							Interoperable, Decentralized, Custodial exchange and decentralized crowdfunding platform on
+							Concordium,
+							coming soon to Ethereum, Polkadot, Solana soon.
+						</div>
 					</div>
-					<div class="banner-text">
-						The first interoperable CEX, DEX, and Crowdfunding platform on top of the Concordium Network. 
+					<div>
+						<a href="" class="button- banner-left__button">
+							Launching Soon
+						</a>
+						<a target="_blank" href="https://bictory.io/b_litepaper.pdf"
+							class="button- button__transparent banner-right__button">
+							Download Litepaper
+							<i class="fas fa-arrow-right"></i>
+						</a>
 					</div>
-					<a href="" class="button- banner-left__button">
-						Launching Soon
-					</a>
-					<a target="_blank" href="https://bictory.io/b_litepaper.pdf" class="button- button__transparent">
-						Download Litepaper
-						<i class="fas fa-arrow-right"></i>
-					</a>
+				</div>
+				<div class="col col-md-7 col-xl-6 col-12 d-md-flex d-none position-absolute top-0 right--25">
+					<img src="images/section1.png" class="w-100" alt="img" />
 				</div>
 			</div>
 		</div>
-		<div class="section- section--about" id="about">
-			<div class="container">
-				<div class="article__subtitle">
-					Technology
-				</div>
-				<div class="row">
-					<div class="col col-md-5 col-12">
-						<h3 class="article__title">
+	</div>
+	<div class="section- section--about" id="about">
+		<div class="container">
+			<div class="article__subtitle">
+				Technology
+			</div>
+			<div class="row mb-5">
+				<div class="col col-md-5 col-12">
+					<h3 class="article__title">
 						Why We Chose <br> Concordium
-						</h3>
+					</h3>
+				</div>
+				<div class="col col-md-7 col-12 align-items-center d-flex">
+					<div class="article__text ">
+						Bictory is built on <a target="_blank" href="https://concordium.com">Concordium</a>, a
+						privacy-centric, public and permissionless Blockchain. With whom we have a partnership to become
+						the first exchange portal enabling developers, liquidity providers and traders exchange value in
+						a decentralized way.
+						Our crowdfunding protocol enable projects on the Concordium ecosystem raise funds in a
+						decentralized way.
 					</div>
-					<div class="col col-md-7 col-12">
-						<div class="article__text">
-							Bictory is built on <a target="_blank" href="https://concordium.com">Concordium</a>, a privacy-centric, public and permissionless Blockchain. With whom we have a partnership to become the first exchange portal enabling developers, liquidity providers and traders exchange value in a decentralized way. <br><br>
-							Our crowdfunding protocol enable projects on the Concordium ecosystem raise funds in a decentralized way.
+				</div>
+			</div>
+			<div class="row">
+				<div class="col col-md-6">
+					<div class="about-item">
+						<div class="about-item__img">
+							<img src="images/img17.png" alt="">
+						</div>
+						<div class="about-item__title position-relative">
+							<div class="position-absolute check-circle-icon">
+								<svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0)">
+										<path
+											d="M4 8.26855L7 10.7686L11 5.76855M7.5 15.2686C6.58075 15.2686 5.6705 15.0875 4.82122 14.7357C3.97194 14.3839 3.20026 13.8683 2.55025 13.2183C1.90024 12.5683 1.38463 11.7966 1.03284 10.9473C0.68106 10.0981 0.5 9.18781 0.5 8.26855C0.5 7.3493 0.68106 6.43905 1.03284 5.58977C1.38463 4.74049 1.90024 3.96882 2.55025 3.31881C3.20026 2.6688 3.97194 2.15318 4.82122 1.8014C5.6705 1.44962 6.58075 1.26855 7.5 1.26855C9.35652 1.26855 11.137 2.00605 12.4497 3.31881C13.7625 4.63156 14.5 6.41204 14.5 8.26855C14.5 10.1251 13.7625 11.9055 12.4497 13.2183C11.137 14.5311 9.35652 15.2686 7.5 15.2686Z" />
+									</g>
+									<defs>
+										<clipPath id="clip0">
+											<rect width="15" height="15" fill="white"
+												transform="translate(0 0.768555)" />
+										</clipPath>
+									</defs>
+								</svg>
+							</div>
+
+							Built on a <span>Blockchain designed for Business.</span>
+						</div>
+						<div class="about-item__text">
+							Concordium is a privacy-focused, public and permissionless blockchain designed to be fast,
+							secure, cost-effective, and ideal for real world usage by businesses and corporations.
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col col-md-6">
-						<div class="about-item">
-							<div class="about-item__img">
-								<img src="images/img17.png" alt="">
-							</div>
-							<div class="about-item__title">
-								Built on a <span>Blockchain designed for Business.</span>
-							</div>
-							<div class="about-item__text">
-								Concordium is a privacy-focused, public and permissionless blockchain designed to be fast, 
-								secure, cost-effective, and ideal for real world usage by businesses and corporations.
-							</div>
+				<div class="col col-md-6">
+					<div class="about-item">
+						<div class="about-item__img">
+							<img src="images/img15.png" alt="">
 						</div>
-					</div>
-					<div class="col col-md-6">
-						<div class="about-item">
-							<div class="about-item__img">
-								<img src="images/img15.png" alt="">
+						<div class="about-item__title position-relative">
+							<div class="position-absolute check-circle-icon">
+								<svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0)">
+										<path
+											d="M4 8.26855L7 10.7686L11 5.76855M7.5 15.2686C6.58075 15.2686 5.6705 15.0875 4.82122 14.7357C3.97194 14.3839 3.20026 13.8683 2.55025 13.2183C1.90024 12.5683 1.38463 11.7966 1.03284 10.9473C0.68106 10.0981 0.5 9.18781 0.5 8.26855C0.5 7.3493 0.68106 6.43905 1.03284 5.58977C1.38463 4.74049 1.90024 3.96882 2.55025 3.31881C3.20026 2.6688 3.97194 2.15318 4.82122 1.8014C5.6705 1.44962 6.58075 1.26855 7.5 1.26855C9.35652 1.26855 11.137 2.00605 12.4497 3.31881C13.7625 4.63156 14.5 6.41204 14.5 8.26855C14.5 10.1251 13.7625 11.9055 12.4497 13.2183C11.137 14.5311 9.35652 15.2686 7.5 15.2686Z" />
+									</g>
+									<defs>
+										<clipPath id="clip0">
+											<rect width="15" height="15" fill="white"
+												transform="translate(0 0.768555)" />
+										</clipPath>
+									</defs>
+								</svg>
 							</div>
-							<div class="about-item__title">
-								<span>Protocol-level Identity Layer.</span>
-							</div>
-							<div class="about-item__text">
-								Concordium provides on-chain identity that Bictory can build on to ensure a hassle-free registration and whitelisting experience across all of Bictory platforms.
-							</div>
+							<span>Protocol-level Identity Layer.</span>
 						</div>
-					</div>
-					<div class="col col-md-6">
-						<div class="about-item">
-							<div class="about-item__img">
-								<img src="images/img18.png" alt="">
-							</div>
-							<div class="about-item__title">
-								Unmatched transaction <span>Speed and Scalability</span>
-							</div>
-							<div class="about-item__text">
-								Concordium is a privacy-focused, public and permissionless blockchain designed to be fast, 
-								secure, cost-effective, and ideal for real world usage by businesses and corporations.
-							</div>
-						</div>
-					</div>
-					<div class="col col-md-6">
-						<div class="about-item">
-							<div class="about-item__img">
-								<img src="images/img16.png" alt="">
-							</div>
-							<div class="about-item__title">
-								Sophisticated Interoperabilty
-							</div>
-							<div class="about-item__text">
-								Concordium's sharding design <span>enables interoperability and communication</span> between sub-blockchains (shards), Concordium and other blockchains.
-							</div>
+						<div class="about-item__text">
+							Concordium provides on-chain identity that Bictory can build on to ensure a hassle-free
+							registration and whitelisting experience across all of Bictory platforms.
 						</div>
 					</div>
 				</div>
-				<div class="bottom__link-wrapper">
-					<a href="https://bictory-finance.medium.com/hybrid-exchange-and-crowdfunding-platform-on-concordium-blockchain-introducing-bictory-finance-8ce18826afc8" class="read-more__link">
-						<span class="link__decor"></span>
-						<div>
-							Read more <i class="fas fa-long-arrow-alt-right"></i>
+				<div class="col col-md-6">
+					<div class="about-item">
+						<div class="about-item__img">
+							<img src="images/img18.png" alt="">
 						</div>
-					</a>
+						<div class="about-item__title position-relative">
+							<div class="position-absolute check-circle-icon">
+								<svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0)">
+										<path
+											d="M4 8.26855L7 10.7686L11 5.76855M7.5 15.2686C6.58075 15.2686 5.6705 15.0875 4.82122 14.7357C3.97194 14.3839 3.20026 13.8683 2.55025 13.2183C1.90024 12.5683 1.38463 11.7966 1.03284 10.9473C0.68106 10.0981 0.5 9.18781 0.5 8.26855C0.5 7.3493 0.68106 6.43905 1.03284 5.58977C1.38463 4.74049 1.90024 3.96882 2.55025 3.31881C3.20026 2.6688 3.97194 2.15318 4.82122 1.8014C5.6705 1.44962 6.58075 1.26855 7.5 1.26855C9.35652 1.26855 11.137 2.00605 12.4497 3.31881C13.7625 4.63156 14.5 6.41204 14.5 8.26855C14.5 10.1251 13.7625 11.9055 12.4497 13.2183C11.137 14.5311 9.35652 15.2686 7.5 15.2686Z" />
+									</g>
+									<defs>
+										<clipPath id="clip0">
+											<rect width="15" height="15" fill="white"
+												transform="translate(0 0.768555)" />
+										</clipPath>
+									</defs>
+								</svg>
+							</div>
+							Unmatched transaction <span>Speed and Scalability</span>
+						</div>
+						<div class="about-item__text">
+							Concordium is a privacy-focused, public and permissionless blockchain designed to be fast,
+							secure, cost-effective, and ideal for real world usage by businesses and corporations.
+						</div>
+					</div>
 				</div>
-				<div class="little-title">
-					Supported chains
-				</div>
-				<div class="supported__chains-list">
-					<div class="chain-list__item">
-						<img src="images/whiteimg20.svg" alt="" id="concordium-logo" class="chain-item__img">
-						<div class="chain-item__title">
-							GTU
+				<div class="col col-md-6">
+					<div class="about-item">
+						<div class="about-item__img">
+							<img src="images/img16.png" alt="">
 						</div>
-					</div>
-					<div class="chain-list__item chain-list__item--gray">
-						<img src="images/img21.png" alt="" class="chain-item__img">
-						<div class="chain-item__title">
-							ETH
+						<div class="about-item__title position-relative">
+							<div class="position-absolute check-circle-icon">
+								<svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0)">
+										<path
+											d="M4 8.26855L7 10.7686L11 5.76855M7.5 15.2686C6.58075 15.2686 5.6705 15.0875 4.82122 14.7357C3.97194 14.3839 3.20026 13.8683 2.55025 13.2183C1.90024 12.5683 1.38463 11.7966 1.03284 10.9473C0.68106 10.0981 0.5 9.18781 0.5 8.26855C0.5 7.3493 0.68106 6.43905 1.03284 5.58977C1.38463 4.74049 1.90024 3.96882 2.55025 3.31881C3.20026 2.6688 3.97194 2.15318 4.82122 1.8014C5.6705 1.44962 6.58075 1.26855 7.5 1.26855C9.35652 1.26855 11.137 2.00605 12.4497 3.31881C13.7625 4.63156 14.5 6.41204 14.5 8.26855C14.5 10.1251 13.7625 11.9055 12.4497 13.2183C11.137 14.5311 9.35652 15.2686 7.5 15.2686Z" />
+									</g>
+									<defs>
+										<clipPath id="clip0">
+											<rect width="15" height="15" fill="white"
+												transform="translate(0 0.768555)" />
+										</clipPath>
+									</defs>
+								</svg>
+							</div>
+							Sophisticated Interoperabilty
 						</div>
-					</div>
-					<div class="chain-list__item chain-list__item--gray">
-						<img src="images/img22.png" alt="" class="chain-item__img">
-						<div class="chain-item__title">
-							DOT
-						</div>
-					</div>
-					<div class="chain-list__item chain-list__item--gray">
-						<img src="images/img23.png" alt="" class="chain-item__img">
-						<div class="chain-item__title">
-							SOL
+						<div class="about-item__text">
+							Concordium's sharding design <span>enables interoperability and communication</span> between
+							sub-blockchains (shards), Concordium and other blockchains.
 						</div>
 					</div>
 				</div>
 			</div>
+			<div class="bottom__link-wrapper">
+				<a href="https://bictory-finance.medium.com/hybrid-exchange-and-crowdfunding-platform-on-concordium-blockchain-introducing-bictory-finance-8ce18826afc8"
+					class="read-more__link">
+					<span class="link__decor"></span>
+					<div>
+						Read more <i class="fas fa-long-arrow-alt-right"></i>
+					</div>
+				</a>
+			</div>
+			<div class="little-title">
+				Supported chains
+			</div>
+			<div class="supported__chains-list">
+				<div class="chain-list__item">
+					<img src="images/whiteimg20.svg" alt="" id="concordium-logo" class="chain-item__img">
+					<div class="chain-item__title">
+						GTU
+					</div>
+				</div>
+				<div class="chain-list__item chain-list__item--gray">
+					<img src="images/img21.png" alt="" class="chain-item__img">
+					<div class="chain-item__title">
+						ETH
+					</div>
+				</div>
+				<div class="chain-list__item chain-list__item--gray">
+					<img src="images/img22.png" alt="" class="chain-item__img">
+					<div class="chain-item__title">
+						DOT
+					</div>
+				</div>
+				<div class="chain-list__item chain-list__item--gray">
+					<img src="images/img23.png" alt="" class="chain-item__img">
+					<div class="chain-item__title">
+						SOL
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="section- section_our-products" id="products">
-			<div class="product-why_us">
-				<div class="why-us__box">
-					<div class="container">
-						<div class="article__subtitle">
-							Products
-						</div>
-						<div class="row">
-							<div class="col col-md-5 col-12">
-								<h3 class="article__title">
+	</div>
+	<div class="section- section_our-products" id="products">
+		<div class="product-why_us">
+			<div class="why-us__box">
+				<div class="container">
+					<div class="article__subtitle">
+						Products
+					</div>
+					<div class="row">
+						<div class="col col-md-5 col-12">
+							<h3 class="article__title">
 								Why You Should <br>
 								Choose Bictory
-								</h3>
-							</div>
-							<div class="col col-md-7 col-12">
-								<div class="article__text">
-									Bictory is utilizing the Concordium blockchain network to build a slew of high-performance and market-ready products in the crypto space. This Includes A fully fledged <a href="">Bictory Decentralized Exchange (DEX)</a>, the <a href="" class="golden__link">Bictory Crowdfunding platform</a>, and the <a href="" class="orange__link">Bictory Custodial Exchange (CEX)</a>.
-								</div>
+							</h3>
+						</div>
+						<div class="col col-md-7 col-12">
+							<div class="article__text">
+								Bictory is utilizing the Concordium blockchain network to build a slew of
+								high-performance and market-ready products in the crypto space. This Includes A fully
+								fledged <a href="">Bictory Decentralized Exchange (DEX)</a>, the <a href="">Bictory
+									Crowdfunding platform</a>, and the <a href="">Bictory Custodial Exchange (CEX)</a>.
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="products-box__wrapper">
-				<div class="products-box">
-					<div class="container">
-						<div class="product__nav">
-							<a href="#Exchange" class="product__link product__link--active">Decentralized Exchange</a>
-							<a href="#Crowdfunding" class="product__link">Crowdfunding</a>
-							<a href="#CustodialExchange" class="product__link">Custodial Exchange</a>
-						</div>
-						<div class="product-content__list">
-							<div class="product__content product__content--active" id="Exchange">
-								<div class="row">
-									<div class="col col-6 d-none d-md-block">
-										<img src="images/exchange-interface-3.png" alt="" class="img-responsive">
+		</div>
+		<div class="products-box__wrapper">
+			<div class="products-box">
+				<div class="container">
+					<div class="product__nav">
+						<a href="#Exchange" class="product__link product__link--active">Decentralized Exchange</a>
+						<a href="#Crowdfunding" class="product__link">Crowdfunding</a>
+						<a href="#CustodialExchange" class="product__link">Custodial Exchange</a>
+					</div>
+					<div class="product-content__list">
+						<div class="product__content product__content--active" id="Exchange">
+							<div class="row">
+								<div class="col col-6 d-none d-md-flex align-items-center justify-content-center">
+									<img src="images/exchange-interface-1.png" alt="" class="img-responsive">
+								</div>
+								<div class="col col-md-6 col-12">
+									<div class="product-content__title">
+										Bictory Crowdfunding
 									</div>
-									<div class="col col-md-6 col-12">
-										<div class="product-content__title">
-											Decentralized Exchange (DEX)
-										</div>
-										<div class="product-content__text">
-											Bictory is a decentralized trading protocol, built on the Concordium blockchain that enables developers,  liquidity providers, traders and crypto enthusiasts exchange value in decentralized and permissionless way. 
+									<div class="product-content__text">
+										Bictory Crowdfunding is a decentralized crowdfunding protocol,
+										that enables backers, supporters, developers,
+										and early stage crypto startups raise capital essential for
+										the growth and development of their projects. Bictory Crowdfunding will be built
+										on Concordium’s superior Blockchain tech.
+									</div>
+									<div class="benefit-list">
+										<div class="row">
+											<div class="col col-md-4 col-6 benefit-item">
+												<div class="benefit-item-img">
+													<svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0)">
+															<path
+																d="M4 8.26855L7 10.7686L11 5.76855M7.5 15.2686C6.58075 15.2686 5.6705 15.0875 4.82122 14.7357C3.97194 14.3839 3.20026 13.8683 2.55025 13.2183C1.90024 12.5683 1.38463 11.7966 1.03284 10.9473C0.68106 10.0981 0.5 9.18781 0.5 8.26855C0.5 7.3493 0.68106 6.43905 1.03284 5.58977C1.38463 4.74049 1.90024 3.96882 2.55025 3.31881C3.20026 2.6688 3.97194 2.15318 4.82122 1.8014C5.6705 1.44962 6.58075 1.26855 7.5 1.26855C9.35652 1.26855 11.137 2.00605 12.4497 3.31881C13.7625 4.63156 14.5 6.41204 14.5 8.26855C14.5 10.1251 13.7625 11.9055 12.4497 13.2183C11.137 14.5311 9.35652 15.2686 7.5 15.2686Z" />
+														</g>
+														<defs>
+															<clipPath id="clip0">
+																<rect width="15" height="15" fill="white"
+																	transform="translate(0 0.768555)" />
+															</clipPath>
+														</defs>
+													</svg>
+												</div>
+												<div class="benefit-item__title">
+													AML/KYC <br />
+													Compliant
+												</div>
+											</div>
+											<div class="col col-md-4 col-6 benefit-item">
+												<div class="benefit-item-img">
+													<svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0)">
+															<path
+																d="M4 8.26855L7 10.7686L11 5.76855M7.5 15.2686C6.58075 15.2686 5.6705 15.0875 4.82122 14.7357C3.97194 14.3839 3.20026 13.8683 2.55025 13.2183C1.90024 12.5683 1.38463 11.7966 1.03284 10.9473C0.68106 10.0981 0.5 9.18781 0.5 8.26855C0.5 7.3493 0.68106 6.43905 1.03284 5.58977C1.38463 4.74049 1.90024 3.96882 2.55025 3.31881C3.20026 2.6688 3.97194 2.15318 4.82122 1.8014C5.6705 1.44962 6.58075 1.26855 7.5 1.26855C9.35652 1.26855 11.137 2.00605 12.4497 3.31881C13.7625 4.63156 14.5 6.41204 14.5 8.26855C14.5 10.1251 13.7625 11.9055 12.4497 13.2183C11.137 14.5311 9.35652 15.2686 7.5 15.2686Z" />
+														</g>
+														<defs>
+															<clipPath id="clip0">
+																<rect width="15" height="15" fill="white"
+																	transform="translate(0 0.768555)" />
+															</clipPath>
+														</defs>
+													</svg>
+												</div>
+												<div class="benefit-item__title">
+													Easy
+													<br />
+													Whitelisting
+												</div>
+											</div>
+											<div class="col col-md-4 col-6 benefit-item">
+												<div class="benefit-item-img">
+													<svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0)">
+															<path
+																d="M4 8.26855L7 10.7686L11 5.76855M7.5 15.2686C6.58075 15.2686 5.6705 15.0875 4.82122 14.7357C3.97194 14.3839 3.20026 13.8683 2.55025 13.2183C1.90024 12.5683 1.38463 11.7966 1.03284 10.9473C0.68106 10.0981 0.5 9.18781 0.5 8.26855C0.5 7.3493 0.68106 6.43905 1.03284 5.58977C1.38463 4.74049 1.90024 3.96882 2.55025 3.31881C3.20026 2.6688 3.97194 2.15318 4.82122 1.8014C5.6705 1.44962 6.58075 1.26855 7.5 1.26855C9.35652 1.26855 11.137 2.00605 12.4497 3.31881C13.7625 4.63156 14.5 6.41204 14.5 8.26855C14.5 10.1251 13.7625 11.9055 12.4497 13.2183C11.137 14.5311 9.35652 15.2686 7.5 15.2686Z" />
+														</g>
+														<defs>
+															<clipPath id="clip0">
+																<rect width="15" height="15" fill="white"
+																	transform="translate(0 0.768555)" />
+															</clipPath>
+														</defs>
+													</svg>
+												</div>
+												<div class="benefit-item__title">
+													Donate in
+													<br />
+													Cryptocurrencies
+												</div>
+											</div>
+											<div class="col col-md-4 col-6 benefit-item">
+												<div class="benefit-item-img">
+													<svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0)">
+															<path
+																d="M4 8.26855L7 10.7686L11 5.76855M7.5 15.2686C6.58075 15.2686 5.6705 15.0875 4.82122 14.7357C3.97194 14.3839 3.20026 13.8683 2.55025 13.2183C1.90024 12.5683 1.38463 11.7966 1.03284 10.9473C0.68106 10.0981 0.5 9.18781 0.5 8.26855C0.5 7.3493 0.68106 6.43905 1.03284 5.58977C1.38463 4.74049 1.90024 3.96882 2.55025 3.31881C3.20026 2.6688 3.97194 2.15318 4.82122 1.8014C5.6705 1.44962 6.58075 1.26855 7.5 1.26855C9.35652 1.26855 11.137 2.00605 12.4497 3.31881C13.7625 4.63156 14.5 6.41204 14.5 8.26855C14.5 10.1251 13.7625 11.9055 12.4497 13.2183C11.137 14.5311 9.35652 15.2686 7.5 15.2686Z" />
+														</g>
+														<defs>
+															<clipPath id="clip0">
+																<rect width="15" height="15" fill="white"
+																	transform="translate(0 0.768555)" />
+															</clipPath>
+														</defs>
+													</svg>
+												</div>
+												<div class="benefit-item__title">
+													Decentralized
+													<br />
+													Crowdfunding
+												</div>
+											</div>
+											<div class="col col-md-4 col-6 benefit-item">
+												<div class="benefit-item-img">
+													<svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0)">
+															<path
+																d="M4 8.26855L7 10.7686L11 5.76855M7.5 15.2686C6.58075 15.2686 5.6705 15.0875 4.82122 14.7357C3.97194 14.3839 3.20026 13.8683 2.55025 13.2183C1.90024 12.5683 1.38463 11.7966 1.03284 10.9473C0.68106 10.0981 0.5 9.18781 0.5 8.26855C0.5 7.3493 0.68106 6.43905 1.03284 5.58977C1.38463 4.74049 1.90024 3.96882 2.55025 3.31881C3.20026 2.6688 3.97194 2.15318 4.82122 1.8014C5.6705 1.44962 6.58075 1.26855 7.5 1.26855C9.35652 1.26855 11.137 2.00605 12.4497 3.31881C13.7625 4.63156 14.5 6.41204 14.5 8.26855C14.5 10.1251 13.7625 11.9055 12.4497 13.2183C11.137 14.5311 9.35652 15.2686 7.5 15.2686Z" />
+														</g>
+														<defs>
+															<clipPath id="clip0">
+																<rect width="15" height="15" fill="white"
+																	transform="translate(0 0.768555)" />
+															</clipPath>
+														</defs>
+													</svg>
+												</div>
+												<div class="benefit-item__title">
+													Protected
+													<br />
+													Privacy
+												</div>
+											</div>
+											<div class="col col-md-4 col-6 benefit-item">
+												<div class="benefit-item-img">
+													<svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0)">
+															<path
+																d="M4 8.26855L7 10.7686L11 5.76855M7.5 15.2686C6.58075 15.2686 5.6705 15.0875 4.82122 14.7357C3.97194 14.3839 3.20026 13.8683 2.55025 13.2183C1.90024 12.5683 1.38463 11.7966 1.03284 10.9473C0.68106 10.0981 0.5 9.18781 0.5 8.26855C0.5 7.3493 0.68106 6.43905 1.03284 5.58977C1.38463 4.74049 1.90024 3.96882 2.55025 3.31881C3.20026 2.6688 3.97194 2.15318 4.82122 1.8014C5.6705 1.44962 6.58075 1.26855 7.5 1.26855C9.35652 1.26855 11.137 2.00605 12.4497 3.31881C13.7625 4.63156 14.5 6.41204 14.5 8.26855C14.5 10.1251 13.7625 11.9055 12.4497 13.2183C11.137 14.5311 9.35652 15.2686 7.5 15.2686Z" />
+														</g>
+														<defs>
+															<clipPath id="clip0">
+																<rect width="15" height="15" fill="white"
+																	transform="translate(0 0.768555)" />
+															</clipPath>
+														</defs>
+													</svg>
+												</div>
+												<div class="benefit-item__title">
+													Auto-Listing
+													<br />
+													on Bictory CEX
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
-								<div class="benefit-list">						
-									<div class="row">
-										<div class="col col-md-4 col-12">
-											<div class="benefit-item">
-												<img src="images/img24.png" alt="" class="benefit-item__image">
+							</div>
+							<div class="bottom__link-wrapper">
+								<a href="https://bictory-finance.medium.com/hybrid-exchange-and-crowdfunding-platform-on-concordium-blockchain-introducing-bictory-finance-8ce18826afc8"
+									class="read-more__link">
+									<span class="link__decor"></span>
+									<div>
+										Read more <i class="fas fa-long-arrow-alt-right"></i>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="product__content" id="Crowdfunding">
+							<div class="row">
+								<div class="col col-6 d-none d-md-block">
+									<img src="images/exchange-interface-2.png" alt="" class="img-responsive">
+								</div>
+								<div class="col col-md-6 col-12">
+									<div class="product-content__title">
+										Centralized Exchange (CEX)
+									</div>
+									<div class="product-content__text">
+										Safely store, and perform Margin and Spot trades over a wide range of
+										cryptocurrencies on Bictory's centralized/ custodial exchange. Utilize multiple
+										advanced
+										order types, gain full access to sophisticated portfolio
+										management tools, and trade faster at very low fees.
+									</div>
+									<div class="benefit-list">
+										<div class="row">
+											<div class="col col-md-4 col-6 benefit-item">
+												<div class="benefit-item-img">
+													<svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0)">
+															<path
+																d="M4 8.26855L7 10.7686L11 5.76855M7.5 15.2686C6.58075 15.2686 5.6705 15.0875 4.82122 14.7357C3.97194 14.3839 3.20026 13.8683 2.55025 13.2183C1.90024 12.5683 1.38463 11.7966 1.03284 10.9473C0.68106 10.0981 0.5 9.18781 0.5 8.26855C0.5 7.3493 0.68106 6.43905 1.03284 5.58977C1.38463 4.74049 1.90024 3.96882 2.55025 3.31881C3.20026 2.6688 3.97194 2.15318 4.82122 1.8014C5.6705 1.44962 6.58075 1.26855 7.5 1.26855C9.35652 1.26855 11.137 2.00605 12.4497 3.31881C13.7625 4.63156 14.5 6.41204 14.5 8.26855C14.5 10.1251 13.7625 11.9055 12.4497 13.2183C11.137 14.5311 9.35652 15.2686 7.5 15.2686Z" />
+														</g>
+														<defs>
+															<clipPath id="clip0">
+																<rect width="15" height="15" fill="white"
+																	transform="translate(0 0.768555)" />
+															</clipPath>
+														</defs>
+													</svg>
+												</div>
 												<div class="benefit-item__title">
-													Cheaper transaction fees
+													Margin <br />
+													& Spots
+												</div>
+											</div>
+											<div class="col col-md-4 col-6 benefit-item">
+												<div class="benefit-item-img">
+													<svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0)">
+															<path
+																d="M4 8.26855L7 10.7686L11 5.76855M7.5 15.2686C6.58075 15.2686 5.6705 15.0875 4.82122 14.7357C3.97194 14.3839 3.20026 13.8683 2.55025 13.2183C1.90024 12.5683 1.38463 11.7966 1.03284 10.9473C0.68106 10.0981 0.5 9.18781 0.5 8.26855C0.5 7.3493 0.68106 6.43905 1.03284 5.58977C1.38463 4.74049 1.90024 3.96882 2.55025 3.31881C3.20026 2.6688 3.97194 2.15318 4.82122 1.8014C5.6705 1.44962 6.58075 1.26855 7.5 1.26855C9.35652 1.26855 11.137 2.00605 12.4497 3.31881C13.7625 4.63156 14.5 6.41204 14.5 8.26855C14.5 10.1251 13.7625 11.9055 12.4497 13.2183C11.137 14.5311 9.35652 15.2686 7.5 15.2686Z" />
+														</g>
+														<defs>
+															<clipPath id="clip0">
+																<rect width="15" height="15" fill="white"
+																	transform="translate(0 0.768555)" />
+															</clipPath>
+														</defs>
+													</svg>
+												</div>
+												<div class="benefit-item__title">
+													Robust
+													<br />
+													Security
+												</div>
+											</div>
+											<div class="col col-md-4 col-6 benefit-item">
+												<div class="benefit-item-img">
+													<svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0)">
+															<path
+																d="M4 8.26855L7 10.7686L11 5.76855M7.5 15.2686C6.58075 15.2686 5.6705 15.0875 4.82122 14.7357C3.97194 14.3839 3.20026 13.8683 2.55025 13.2183C1.90024 12.5683 1.38463 11.7966 1.03284 10.9473C0.68106 10.0981 0.5 9.18781 0.5 8.26855C0.5 7.3493 0.68106 6.43905 1.03284 5.58977C1.38463 4.74049 1.90024 3.96882 2.55025 3.31881C3.20026 2.6688 3.97194 2.15318 4.82122 1.8014C5.6705 1.44962 6.58075 1.26855 7.5 1.26855C9.35652 1.26855 11.137 2.00605 12.4497 3.31881C13.7625 4.63156 14.5 6.41204 14.5 8.26855C14.5 10.1251 13.7625 11.9055 12.4497 13.2183C11.137 14.5311 9.35652 15.2686 7.5 15.2686Z" />
+														</g>
+														<defs>
+															<clipPath id="clip0">
+																<rect width="15" height="15" fill="white"
+																	transform="translate(0 0.768555)" />
+															</clipPath>
+														</defs>
+													</svg>
+												</div>
+												<div class="benefit-item__title">
+													Proven
+													<br />
+													Scalability
+												</div>
+											</div>
+											<div class="col col-md-4 col-6 benefit-item">
+												<div class="benefit-item-img">
+													<svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0)">
+															<path
+																d="M4 8.26855L7 10.7686L11 5.76855M7.5 15.2686C6.58075 15.2686 5.6705 15.0875 4.82122 14.7357C3.97194 14.3839 3.20026 13.8683 2.55025 13.2183C1.90024 12.5683 1.38463 11.7966 1.03284 10.9473C0.68106 10.0981 0.5 9.18781 0.5 8.26855C0.5 7.3493 0.68106 6.43905 1.03284 5.58977C1.38463 4.74049 1.90024 3.96882 2.55025 3.31881C3.20026 2.6688 3.97194 2.15318 4.82122 1.8014C5.6705 1.44962 6.58075 1.26855 7.5 1.26855C9.35652 1.26855 11.137 2.00605 12.4497 3.31881C13.7625 4.63156 14.5 6.41204 14.5 8.26855C14.5 10.1251 13.7625 11.9055 12.4497 13.2183C11.137 14.5311 9.35652 15.2686 7.5 15.2686Z" />
+														</g>
+														<defs>
+															<clipPath id="clip0">
+																<rect width="15" height="15" fill="white"
+																	transform="translate(0 0.768555)" />
+															</clipPath>
+														</defs>
+													</svg>
+												</div>
+												<div class="benefit-item__title">
+													On-Chain
+													<br />
+													ID Layer
+												</div>
+											</div>
+											<div class="col col-md-4 col-6 benefit-item">
+												<div class="benefit-item-img">
+													<svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0)">
+															<path
+																d="M4 8.26855L7 10.7686L11 5.76855M7.5 15.2686C6.58075 15.2686 5.6705 15.0875 4.82122 14.7357C3.97194 14.3839 3.20026 13.8683 2.55025 13.2183C1.90024 12.5683 1.38463 11.7966 1.03284 10.9473C0.68106 10.0981 0.5 9.18781 0.5 8.26855C0.5 7.3493 0.68106 6.43905 1.03284 5.58977C1.38463 4.74049 1.90024 3.96882 2.55025 3.31881C3.20026 2.6688 3.97194 2.15318 4.82122 1.8014C5.6705 1.44962 6.58075 1.26855 7.5 1.26855C9.35652 1.26855 11.137 2.00605 12.4497 3.31881C13.7625 4.63156 14.5 6.41204 14.5 8.26855C14.5 10.1251 13.7625 11.9055 12.4497 13.2183C11.137 14.5311 9.35652 15.2686 7.5 15.2686Z" />
+														</g>
+														<defs>
+															<clipPath id="clip0">
+																<rect width="15" height="15" fill="white"
+																	transform="translate(0 0.768555)" />
+															</clipPath>
+														</defs>
+													</svg>
+												</div>
+												<div class="benefit-item__title">
+													Quick Trade
+													<br />
+													Executions
+												</div>
+											</div>
+											<div class="col col-md-4 col-6 benefit-item">
+												<div class="benefit-item-img">
+													<svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0)">
+															<path
+																d="M4 8.26855L7 10.7686L11 5.76855M7.5 15.2686C6.58075 15.2686 5.6705 15.0875 4.82122 14.7357C3.97194 14.3839 3.20026 13.8683 2.55025 13.2183C1.90024 12.5683 1.38463 11.7966 1.03284 10.9473C0.68106 10.0981 0.5 9.18781 0.5 8.26855C0.5 7.3493 0.68106 6.43905 1.03284 5.58977C1.38463 4.74049 1.90024 3.96882 2.55025 3.31881C3.20026 2.6688 3.97194 2.15318 4.82122 1.8014C5.6705 1.44962 6.58075 1.26855 7.5 1.26855C9.35652 1.26855 11.137 2.00605 12.4497 3.31881C13.7625 4.63156 14.5 6.41204 14.5 8.26855C14.5 10.1251 13.7625 11.9055 12.4497 13.2183C11.137 14.5311 9.35652 15.2686 7.5 15.2686Z" />
+														</g>
+														<defs>
+															<clipPath id="clip0">
+																<rect width="15" height="15" fill="white"
+																	transform="translate(0 0.768555)" />
+															</clipPath>
+														</defs>
+													</svg>
+												</div>
+												<div class="benefit-item__title">
+													Cheap fees
+													<br />
+													/Comissions
 												</div>
 											</div>
 										</div>
-										<div class="col col-md-4 col-12">
-											<div class="benefit-item">
-												<img src="images/img25.png" alt="" class="benefit-item__image">
+									</div>
+								</div>
+							</div>
+							<div class="bottom__link-wrapper">
+								<a href="https://bictory-finance.medium.com/hybrid-exchange-and-crowdfunding-platform-on-concordium-blockchain-introducing-bictory-finance-8ce18826afc8"
+									class="read-more__link">
+									<span class="link__decor"></span>
+									<div>
+										Read more <i class="fas fa-long-arrow-alt-right"></i>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="product__content" id="CustodialExchange">
+							<div class="row">
+								<div class="col col-6 d-none d-md-block">
+									<img src="images/exchange-interface-3.png" id="exchange-interface-3" alt="" class="img-responsive">
+								</div>
+								<div class="col col-md-6 col-12">
+									<div class="product-content__title">
+										Decentralized Exchange (DEX)
+									</div>
+									<div class="product-content__text">
+										Bictory is a decentralized trading protocol, built on the Concordium blockchain
+										that enables developers, liquidity providers, traders and crypto enthusiasts
+										exchange value in decentralized and permissionless way.
+									</div>
+									<div class="benefit-list">
+										<div class="row">
+											<div class="col col-md-4 col-6 benefit-item">
+												<div class="benefit-item-img">
+													<svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0)">
+															<path
+																d="M4 8.26855L7 10.7686L11 5.76855M7.5 15.2686C6.58075 15.2686 5.6705 15.0875 4.82122 14.7357C3.97194 14.3839 3.20026 13.8683 2.55025 13.2183C1.90024 12.5683 1.38463 11.7966 1.03284 10.9473C0.68106 10.0981 0.5 9.18781 0.5 8.26855C0.5 7.3493 0.68106 6.43905 1.03284 5.58977C1.38463 4.74049 1.90024 3.96882 2.55025 3.31881C3.20026 2.6688 3.97194 2.15318 4.82122 1.8014C5.6705 1.44962 6.58075 1.26855 7.5 1.26855C9.35652 1.26855 11.137 2.00605 12.4497 3.31881C13.7625 4.63156 14.5 6.41204 14.5 8.26855C14.5 10.1251 13.7625 11.9055 12.4497 13.2183C11.137 14.5311 9.35652 15.2686 7.5 15.2686Z" />
+														</g>
+														<defs>
+															<clipPath id="clip0">
+																<rect width="15" height="15" fill="white"
+																	transform="translate(0 0.768555)" />
+															</clipPath>
+														</defs>
+													</svg>
+												</div>
 												<div class="benefit-item__title">
-													Less Slippage
+													Cheaper <br />
+													trans. fees
+
 												</div>
 											</div>
-										</div>
-										<div class="col col-md-4 col-12">
-											<div class="benefit-item">
-												<img src="images/img28.png" alt="" class="benefit-item__image">
+											<div class="col col-md-4 col-6 benefit-item">
+												<div class="benefit-item-img">
+													<svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0)">
+															<path
+																d="M4 8.26855L7 10.7686L11 5.76855M7.5 15.2686C6.58075 15.2686 5.6705 15.0875 4.82122 14.7357C3.97194 14.3839 3.20026 13.8683 2.55025 13.2183C1.90024 12.5683 1.38463 11.7966 1.03284 10.9473C0.68106 10.0981 0.5 9.18781 0.5 8.26855C0.5 7.3493 0.68106 6.43905 1.03284 5.58977C1.38463 4.74049 1.90024 3.96882 2.55025 3.31881C3.20026 2.6688 3.97194 2.15318 4.82122 1.8014C5.6705 1.44962 6.58075 1.26855 7.5 1.26855C9.35652 1.26855 11.137 2.00605 12.4497 3.31881C13.7625 4.63156 14.5 6.41204 14.5 8.26855C14.5 10.1251 13.7625 11.9055 12.4497 13.2183C11.137 14.5311 9.35652 15.2686 7.5 15.2686Z" />
+														</g>
+														<defs>
+															<clipPath id="clip0">
+																<rect width="15" height="15" fill="white"
+																	transform="translate(0 0.768555)" />
+															</clipPath>
+														</defs>
+													</svg>
+												</div>
 												<div class="benefit-item__title">
-													Decentralized Crowd pooling
+													Low
+													<br />
+													Slippage
 												</div>
 											</div>
-										</div>
-										<div class="col col-md-4 col-12">
-											<div class="benefit-item">
-												<img src="images/img26.png" alt="" class="benefit-item__image">
+											<div class="col col-md-4 col-6 benefit-item">
+												<div class="benefit-item-img">
+													<svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0)">
+															<path
+																d="M4 8.26855L7 10.7686L11 5.76855M7.5 15.2686C6.58075 15.2686 5.6705 15.0875 4.82122 14.7357C3.97194 14.3839 3.20026 13.8683 2.55025 13.2183C1.90024 12.5683 1.38463 11.7966 1.03284 10.9473C0.68106 10.0981 0.5 9.18781 0.5 8.26855C0.5 7.3493 0.68106 6.43905 1.03284 5.58977C1.38463 4.74049 1.90024 3.96882 2.55025 3.31881C3.20026 2.6688 3.97194 2.15318 4.82122 1.8014C5.6705 1.44962 6.58075 1.26855 7.5 1.26855C9.35652 1.26855 11.137 2.00605 12.4497 3.31881C13.7625 4.63156 14.5 6.41204 14.5 8.26855C14.5 10.1251 13.7625 11.9055 12.4497 13.2183C11.137 14.5311 9.35652 15.2686 7.5 15.2686Z" />
+														</g>
+														<defs>
+															<clipPath id="clip0">
+																<rect width="15" height="15" fill="white"
+																	transform="translate(0 0.768555)" />
+															</clipPath>
+														</defs>
+													</svg>
+												</div>
 												<div class="benefit-item__title">
+													Cross-chain
+													<br />
 													Interoperable
 												</div>
 											</div>
-										</div>
-										<div class="col col-md-4 col-12">
-											<div class="benefit-item">
-												<img src="images/img27.png" alt="" class="benefit-item__image">
+											<div class="col col-md-4 col-6 benefit-item">
+												<div class="benefit-item-img">
+													<svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0)">
+															<path
+																d="M4 8.26855L7 10.7686L11 5.76855M7.5 15.2686C6.58075 15.2686 5.6705 15.0875 4.82122 14.7357C3.97194 14.3839 3.20026 13.8683 2.55025 13.2183C1.90024 12.5683 1.38463 11.7966 1.03284 10.9473C0.68106 10.0981 0.5 9.18781 0.5 8.26855C0.5 7.3493 0.68106 6.43905 1.03284 5.58977C1.38463 4.74049 1.90024 3.96882 2.55025 3.31881C3.20026 2.6688 3.97194 2.15318 4.82122 1.8014C5.6705 1.44962 6.58075 1.26855 7.5 1.26855C9.35652 1.26855 11.137 2.00605 12.4497 3.31881C13.7625 4.63156 14.5 6.41204 14.5 8.26855C14.5 10.1251 13.7625 11.9055 12.4497 13.2183C11.137 14.5311 9.35652 15.2686 7.5 15.2686Z" />
+														</g>
+														<defs>
+															<clipPath id="clip0">
+																<rect width="15" height="15" fill="white"
+																	transform="translate(0 0.768555)" />
+															</clipPath>
+														</defs>
+													</svg>
+												</div>
 												<div class="benefit-item__title">
-													On-Chain Market Making
+													Decentralized
+													<br />
+													Crowd Pooling
+												</div>
+											</div>
+											<div class="col col-md-4 col-6 benefit-item">
+												<div class="benefit-item-img">
+													<svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0)">
+															<path
+																d="M4 8.26855L7 10.7686L11 5.76855M7.5 15.2686C6.58075 15.2686 5.6705 15.0875 4.82122 14.7357C3.97194 14.3839 3.20026 13.8683 2.55025 13.2183C1.90024 12.5683 1.38463 11.7966 1.03284 10.9473C0.68106 10.0981 0.5 9.18781 0.5 8.26855C0.5 7.3493 0.68106 6.43905 1.03284 5.58977C1.38463 4.74049 1.90024 3.96882 2.55025 3.31881C3.20026 2.6688 3.97194 2.15318 4.82122 1.8014C5.6705 1.44962 6.58075 1.26855 7.5 1.26855C9.35652 1.26855 11.137 2.00605 12.4497 3.31881C13.7625 4.63156 14.5 6.41204 14.5 8.26855C14.5 10.1251 13.7625 11.9055 12.4497 13.2183C11.137 14.5311 9.35652 15.2686 7.5 15.2686Z" />
+														</g>
+														<defs>
+															<clipPath id="clip0">
+																<rect width="15" height="15" fill="white"
+																	transform="translate(0 0.768555)" />
+															</clipPath>
+														</defs>
+													</svg>
+												</div>
+												<div class="benefit-item__title">
+													On-Chain
+													<br />
+													Market Making
 												</div>
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="bottom__link-wrapper">
-									<a href="https://bictory-finance.medium.com/hybrid-exchange-and-crowdfunding-platform-on-concordium-blockchain-introducing-bictory-finance-8ce18826afc8" class="read-more__link">
-										<span class="link__decor"></span>
-										<div>
-											Read more <i class="fas fa-long-arrow-alt-right"></i>
-										</div>
-									</a>
 								</div>
 							</div>
-							<div class="product__content" id="Crowdfunding">
-								<div class="row">
-									<div class="col col-6 d-none d-md-block">
-										<img src="images/exchange-interface-3.png" alt="" class="img-responsive">
+							<div class="bottom__link-wrapper">
+								<a href="https://bictory-finance.medium.com/hybrid-exchange-and-crowdfunding-platform-on-concordium-blockchain-introducing-bictory-finance-8ce18826afc8"
+									class="read-more__link">
+									<span class="link__decor"></span>
+									<div>
+										Read more <i class="fas fa-long-arrow-alt-right"></i>
 									</div>
-									<div class="col col-md-6 col-12">
-										<div class="product-content__title">
-											Bictory Crowdfunding
-										</div>
-										<div class="product-content__text">
-											Bictory Crowdfunding is a decentralized trading protocol,
-											built on the Concordium blockchain that enables developers,
-											and early stage crypto startups raise capital essential for
-											the growth and development of their projects.
-										</div>
-									</div>
-								</div>
-								<div class="benefit-list">						
-									<div class="row">
-										<div class="col col-md-4 col-12">
-											<div class="benefit-item">
-												<img src="images/lightning1.png" alt="" class="benefit-item__image">
-												<div class="benefit-item__title">
-													Fast transactions
-												</div>
-											</div>
-										</div>
-										<div class="col col-md-4 col-12">
-											<div class="benefit-item">
-												<img src="images/arrows1.png" alt="" class="benefit-item__image">
-												<div class="benefit-item__title">
-													Cross-chain swap pools
-												</div>
-											</div>
-										</div>
-										<div class="col col-md-4 col-12">
-											<div class="benefit-item">
-												<img src="images/price-tag1.png" alt="" class="benefit-item__image">
-												<div class="benefit-item__title">
-													IDO Automatic listing on CEX
-												</div>
-											</div>
-										</div>
-										<div class="col col-md-4 col-12">
-											<div class="benefit-item">
-												<img src="images/img24.png" alt="" class="benefit-item__image">
-												<div class="benefit-item__title">
-													AML/KYC Compliant
-												</div>
-											</div>
-										</div>
-										<div class="col col-md-4 col-12">
-											<div class="benefit-item">
-												<img src="images/Group9712.png" alt="" class="benefit-item__image">
-												<div class="benefit-item__title">
-													Easy whitelisting
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="bottom__link-wrapper">
-									<a href="https://bictory-finance.medium.com/hybrid-exchange-and-crowdfunding-platform-on-concordium-blockchain-introducing-bictory-finance-8ce18826afc8" class="read-more__link">
-										<span class="link__decor"></span>
-										<div>
-											Read more <i class="fas fa-long-arrow-alt-right"></i>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="product__content" id="CustodialExchange">
-								<div class="row">
-									<div class="col col-6 d-none d-md-block">
-										<img src="images/exchange-interface-3.png" alt="" class="img-responsive">
-									</div>
-									<div class="col col-md-6 col-12">
-										<div class="product-content__title">
-											Bictory Custodial Exchange
-										</div>
-										<div class="product-content__text">
-											With Bictory's custodial exchange, users can perform 
-											margin and spot trade, as well as full access to sophisticated portfolio
-											management tools, as well as utilize multiple advanced
-											order types to trade faster for less fee.
-										</div>
-										<ul class="product-content__ul">
-											<li class="product-content__li">
-												Best Trading Experience
-											</li>
-											<li class="product-content__li">
-												Security and Compliance
-											</li>
-											<li class="product-content__li">
-												Proven Reliability
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="benefit-list">						
-									<div class="row">
-										<div class="col col-md-4 col-12">
-											<div class="benefit-item">
-												<img src="images/img15.png" alt="" class="benefit-item__image benefit-item__image--id__layer">
-												<div class="benefit-item__title">
-													On-Chain ID layer
-												</div>
-											</div>
-										</div>
-										<div class="col col-md-4 col-12">
-											<div class="benefit-item">
-												<img src="images/Group9669.png" alt="" class="benefit-item__image">
-												<div class="benefit-item__title">
-													Margin and Spots
-												</div>
-											</div>
-										</div>
-										<div class="col col-md-4 col-12">
-											<div class="benefit-item">
-												<img src="images/Group9714.png" alt="" class="benefit-item__image">
-												<div class="benefit-item__title">
-													Robust security
-												</div>
-											</div>
-										</div>
-										<div class="col col-md-4 col-12">
-											<div class="benefit-item">
-												<img src="images/lightning1.png" alt="" class="benefit-item__image">
-												<div class="benefit-item__title">
-													Quick order executions
-												</div>
-											</div>
-										</div>
-										<div class="col col-md-4 col-12">
-											<div class="benefit-item">
-												<img src="images/ri_coins-fill.png" alt="" class="benefit-item__image">
-												<div class="benefit-item__title">
-													Cheap fees/commissions
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="bottom__link-wrapper">
-									<a href="https://bictory-finance.medium.com/hybrid-exchange-and-crowdfunding-platform-on-concordium-blockchain-introducing-bictory-finance-8ce18826afc8" class="read-more__link">
-										<span class="link__decor"></span>
-										<div>
-											Read more <i class="fas fa-long-arrow-alt-right"></i>
-										</div>
-									</a>
-								</div>
+								</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- <div class="section- section--roadmap">
-			<div class="container">
-				<div class="section-title section-title--light">
-					<img src="images/icon.png" alt="">
-					<span>Our Roadmap</span>
+	</div>
+	<div class="section- section_partners-and-investors">
+		<div class="container position-relative">
+			<div class="little-title">
+				Partners and investors
+			</div>
+			<div class="row partners-investors-list">
+				<div class="col-md-4 col-12 partners-investors">
+					<img src="images/partner-investror-1.png" alt="Partner and investor" />
 				</div>
-				<div class="roadmap">
-					<div class="roadmap__line">
+				<div class="col-md-4 col-12 partners-investors">
+					<img src="images/partner-investror-2.png" id="partner-investror-2" alt="Partner and investor" />
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section- section--roadmap">
+		<div class="container">
+			<div class="section-title section-title--light">
+				<div class="title-icon">
+					<img src="images/icon.svg" alt="">
+				</div>
+				<span>Our Roadmap</span>
+			</div>
+			<div class="roadmap">
+				<div class="roadmap__block" id="roadmap">
+					<img src="images/roadmap.svg" id="roadmap-image" alt="">
+				</div>
+				<!-- <div class="roadmap__line">
 						<div class="item-q1">
 							<div class="success__line"></div>
 							<div class="vertical__line">
@@ -538,210 +897,175 @@
 								</div>
 							</div>
 						</div>
+					</div> -->
+			</div>
+		</div>
+	</div>
+
+	<div class="section- section--tokenomics position-relative" id="tokenomics">
+		<div class="container">
+			<div class="section-title section-title--light">
+				<div class="title-icon">
+					<img src="images/icon.svg" alt="">
+				</div>
+				<span>Tokenomics</span>
+			</div>
+			<div class="row">
+				<div class="col col-md-6 col-12">
+					<div class="token__title">
+						Token Data:
+					</div>
+					<div class="token-item__list">
+						<div class="token__item">
+							<div class="token-item__label">
+								Token Ticker:
+							</div>
+							<div class="token-item__value token-item__value--primary">
+								<b>BT Token</b>
+							</div>
+						</div>
+						<div class="token__item">
+							<div class="token-item__label">
+								Platform:
+							</div>
+							<div class="token-item__value">
+								Concordium
+							</div>
+						</div>
+						<div class="token__item">
+							<div class="token-item__label">
+								Token type:
+							</div>
+							<div class="token-item__value">
+								Concordium token
+							</div>
+						</div>
+						<div class="token__item">
+							<div class="token-item__label">
+								Total supply:
+							</div>
+							<div class="token-item__value">
+								100, 000, 000 (One Hundred Million BT tokens)
+							</div>
+						</div>
+						<div class="token__item">
+							<div class="token-item__label">
+								Explorer:
+							</div>
+							<div class="token-item__value token-item__value--primary">
+								concordiumscan.placeholder
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div> -->
-		<div class="roadmap__block" id="roadmap">
-			<img src="images/roadmap.svg" id="roadmap-image" alt="">
-		</div>
-		<div class="section- section--tokenomics" id="tokenomics">
-			<div class="container">
-				<div class="section-title section-title--light">
-					<img src="images/icon.png" alt="">
-					<span>Tokenomics</span>
-				</div>
+			<div class="token-distribution">
 				<div class="row">
 					<div class="col col-md-6 col-12">
-						<div class="token__title">
-							Token Data:
-						</div>
-						<div class="token-item__list">
-							<div class="token__item">
-								<div class="token-item__label">
-									Token Ticker:
-								</div>
-								<div class="token-item__value token-item__value--primary">
-									<b>BT Token</b>
-								</div>
-							</div>
-							<div class="token__item">
-								<div class="token-item__label">
-									Platform:
-								</div>
-								<div class="token-item__value">
-									Concordium
-								</div>
-							</div>
-							<div class="token__item">
-								<div class="token-item__label">
-									Token type:
-								</div>
-								<div class="token-item__value">
-									Concordium token
-								</div>
-							</div>
-							<div class="token__item">
-								<div class="token-item__label">
-									Total supply:
-								</div>
-								<div class="token-item__value">
-									100, 000, 000 (One Hundred Million BT tokens)
-								</div>
-							</div>
-							<div class="token__item">
-								<div class="token-item__label">
-									Explorer:
-								</div>
-								<div class="token-item__value token-item__value--primary">
-									concordiumscan.placeholder
-								</div>
-							</div>
-						</div>
-						<div class="token-distribution">
-							<div class="row">
-								<div class="col col-6">
-									<div class="distr-item">
-										<div class="distr-item__value">
-											<div class="distr-item__color"></div>
-											2%
-										</div>
-										<div>
-											<div class="distr-item__title">
-												Seed Sale
-											</div>
-											<div class="distr-item__count">
-												2, 000, 000
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col col-6">
-									<div class="distr-item">
-										<div class="distr-item__value">
-											<div class="distr-item__color distr-item__color--presale"></div>
-											19%
-										</div>
-										<div>
-											<div class="distr-item__title">
-												Private Sale
-											</div>
-											<div class="distr-item__count">
-												19, 000, 000
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col col-6">
-									<div class="distr-item">
-										<div class="distr-item__value">
-											<div class="distr-item__color distr-item__color--ieo"></div>
-											4%
-										</div>
-										<div>
-											<div class="distr-item__title">
-												Public Sale
-											</div>
-											<div class="distr-item__count">
-												4, 000, 000
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col col-6">
-									<div class="distr-item">
-										<div class="distr-item__value">
-											<div class="distr-item__color distr-item__color--platform-growth"></div>
-											28%
-										</div>
-										<div>
-											<div class="distr-item__title">
-												Platform Growth
-											</div>
-											<div class="distr-item__count">
-												28, 000, 000 
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col col-6">
-									<div class="distr-item">
-										<div class="distr-item__value">
-											<div class="distr-item__color distr-item__color--foundation"></div>
-											15%
-										</div>
-										<div>
-											<div class="distr-item__title">
-												Founding Team
-											</div>
-											<div class="distr-item__count">
-												15, 000, 000 
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col col-6">
-									<div class="distr-item">
-										<div class="distr-item__value">
-											<div class="distr-item__color distr-item__color--partners"></div>
-											5%
-										</div>
-										<div>
-											<div class="distr-item__title">
-												Strategic Partners
-											</div>
-											<div class="distr-item__count">
-												5, 000, 000 
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col col-6">
-									<div class="distr-item">
-										<div class="distr-item__value">
-											<div class="distr-item__color distr-item__color--advisors"></div>
-											2%
-										</div>
-										<div>
-											<div class="distr-item__title">
-												Advisors
-											</div>
-											<div class="distr-item__count">
-												2, 000, 000 
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col col-6">
-									<div class="distr-item">
-										<div class="distr-item__value">
-											<div class="distr-item__color distr-item__color--community-reward"></div>
-											25%
-										</div>
-										<div>
-											<div class="distr-item__title">
-												Community Reward
-											</div>
-											<div class="distr-item__count">
-												25, 000, 000 
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
+						<div class="tokenomics-img__wrapper">
+							<img src="images/piechart.svg" alt="" id="tokenomics-diagram" class="img-responsive">
 						</div>
 					</div>
-					<div class="col col-md-6 col-12">
-						<div class="tokenomics-img__wrapper">
-							<img src="images/Frame58.svg" alt="" id="tokenomics-diagram" class="img-responsive">
+					<div class="col-md-6 col-12 align-items-center d-flex">
+						<div class="row">
+
+							<div class="col-12">
+								<div class="distr-item">
+									<div class="distr-item__color"></div>
+									<div class="distr-item__title">
+										Seed Sale:
+									</div>
+									<div class="distr-item__count">
+										2% (2 Million tokens)
+									</div>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="distr-item">
+									<div class="distr-item__color distr-item__color--presale"></div>
+									<div class="distr-item__title">
+										Private Sale:
+									</div>
+									<div class="distr-item__count">
+										19% (19 Million tokens)
+									</div>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="distr-item">
+									<div class="distr-item__color distr-item__color--ieo"></div>
+									<div class="distr-item__title">
+										Public Sale:
+									</div>
+									<div class="distr-item__count">
+										4% (4 Million tokens)
+									</div>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="distr-item">
+									<div class="distr-item__color distr-item__color--platform-growth"></div>
+									<div class="distr-item__title">
+										Platform Growth:
+									</div>
+									<div class="distr-item__count">
+										28% (28 Million tokens)
+									</div>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="distr-item">
+									<div class="distr-item__color distr-item__color--foundation"></div>
+									<div class="distr-item__title">
+										Founding Team:
+									</div>
+									<div class="distr-item__count">
+										15% (15 Million tokens)
+									</div>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="distr-item">
+									<div class="distr-item__color distr-item__color--partners"></div>
+									<div class="distr-item__title">
+										Strategic Partners:
+									</div>
+									<div class="distr-item__count">
+										5% (5 Million tokens)
+									</div>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="distr-item">
+									<div class="distr-item__color distr-item__color--advisors"></div>
+									<div class="distr-item__title">
+										Advisors:
+									</div>
+									<div class="distr-item__count">
+										2% (2 Million tokens)
+									</div>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="distr-item">
+									<div class="distr-item__color distr-item__color--community-reward"></div>
+									<div class="distr-item__title">
+										Community Reward: 
+									</div>
+									<div class="distr-item__count">
+										25% (25 Million tokens)
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="section- section--team" id="team">
-			<div class="container">
-				<!-- <div class="section-title section-title--light">
+	</div>
+	<div class="section- section--team" id="team">
+		<div class="container">
+			<!-- <div class="section-title section-title--light">
 					<img src="images/icon.png" alt="">
 					<span>Meet Our Team</span>
 				</div>
@@ -915,103 +1239,119 @@
 						</div>
 					</div>
 				</div> -->
-				<div class="section-title section-title--light">
-					<img src="images/icon.png" alt="">
-					<span>Team and Advisors</span>
+			<div class="section-title section-title--light">
+				<div class="title-icon">
+					<img src="images/icon.svg" alt="">
 				</div>
-				<div class="section-subtitle">
-					In the coming weeks, we will be unveiling the team behind Bictory Finance, as well as it's advisory board, which consists of marketing, technical, and financial talents coming out of top blockchain projects, schools and employers.
-				</div>
-				<div class="row row-center-">
-					<div class="col col-md-5 col-6">
-						<div class="member-item">
-							<div class="member-image__wrapper">
-								<img src="images/image52.png" alt="" class="img-responsive">
-							</div>
-							<div class="member-name">
-								Dylan Dewdney
-							</div>
-							<div class="member-position">
-								Strategic Advisor
-							</div>
-							<div class="member-desc">
-								Dylan is a longtime crypto enthusiast (Since 2011). In 2017, he co-founded Harbour DAO, which became an open-standard set of tools for building governance structures and voting mechanisms on ERC-20. Later, as Chief Evangelist of Beam and Head of Growth for AdEx, he was a key part of their GTM and general growth strategies. Dylan is a respected peer among many different projects and areas of business. He is currently the CEO of Kylin Network.
-							</div>
-							<div class="member-links">
-								<a href=" https://www.linkedin.com/in/dylan-dewdney" target="_blank" class="linkedIn-">
-									<i class="fab fa-linkedin"></i>
-								</a>
-								<a href="https://twitter.com/dylandewdney" target="_blank" class="twitter-">
-									<i class="fab fa-twitter-square"></i>
-								</a>
-							</div>
+				<span>Team and Advisors</span>
+			</div>
+			<div class="section-subtitle">
+				In the coming weeks, we will be unveiling the team behind Bictory Finance, as well as it's advisory
+				board, which consists of marketing, technical, and financial talents coming out of top blockchain
+				projects, schools and employers.
+			</div>
+			<div class="row row-center-">
+				<div class="col col-md-8 col-lg-5 col-12">
+					<div class="member-item">
+						<div class="member-image__wrapper">
+							<img src="images/image52.png" alt="" class="img-responsive">
+						</div>
+						<div class="member-name">
+							Dylan Dewdney
+						</div>
+						<div class="member-position">
+							Strategic Advisor
+						</div>
+						<div class="member-desc">
+							Dylan is a longtime crypto enthusiast (Since 2011). In 2017, he co-founded Harbour DAO,
+							which became an open-standard set of tools for building governance structures and voting
+							mechanisms on ERC-20. Later, as Chief Evangelist of Beam and Head of Growth for AdEx, he was
+							a key part of their GTM and general growth strategies. Dylan is a respected peer among many
+							different projects and areas of business. He is currently the CEO of Kylin Network.
+						</div>
+						<div class="member-links">
+							<a href=" https://www.linkedin.com/in/dylan-dewdney" target="_blank" class="linkedIn-">
+								<i class="fab fa-linkedin"></i>
+							</a>
+							<a href="https://twitter.com/dylandewdney" target="_blank" class="twitter-">
+								<i class="fab fa-twitter-square"></i>
+							</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="section- section--contacts" id="contact-us">
-			<div class="container">
-				<div class="contact__form">
-					<div class="form__request">
-						<div class="section-title section-title--light">
-							<img src="images/icon.png" alt="">
-							<span>Contact us</span>
+	</div>
+	<!-- <div class="section- section--contacts" id="contact-us">
+		<div class="container">
+			<div class="contact__form">
+				<div class="form__request">
+					<div class="section-title section-title--light">
+						<div class="title-icon">
+							<img src="images/icon.svg" alt="">
 						</div>
-						<div class="row">
-							<div class="col col-lg-6 col-12">
-								<div class="input-list__title">
-									Send us a message
-								</div>
-								<div class="input-list__subtitle">
-									Reach us if you have any questions or suggestions
-								</div>
-								<form id="form" method="post" action="sendmail.php">
-									<div class="input__wrapper">
-										<input type="text" class="input-" placeholder="Enter Name" required name="name">
-									</div>
-									<div class="input__wrapper">
-										<input type="email" class="input-" placeholder="Email Address" required name="email">
-									</div>
-									<div class="input-wrapper">
-										<textarea rows="5" class="input- textarea-" placeholder="Type your message to us here" required name="text"></textarea>
-									</div>
-									<div class="checkbox-wrapper">
-										<input type="checkbox" class="custom__checkbox" id="custom__checkbox1" checked>
-										<label for="custom__checkbox1" class="reg__label">
-											<span class="custom-checkbox__span">
-												Allow us send you awesome updates.
-											</span>
-										</label>
-									</div>
-									<button type="submit" class="button- button-send__message full__width">
-										SEND MESSAGE
-									</button>
-                </form>
+						<span>Contact us</span>
+					</div>
+					<div class="row">
+						<div class="col col-lg-6 col-12">
+							<div class="input-list__title">
+								Send us a message
 							</div>
-							<div class="col col-lg-6 col-12">
-								<div class="contact-info">
-									<div class="contact-info__title">
-										Contact Information
-									</div>
-									<div class="contact-info-text">
-										Cross-chain Decentralized Exchange and Crowdfunding, connecting Concordium to Ethereum and Polkadot
-									</div>
-									<div class="contact-info__item">
-										<div>
-											For Marketing & Business Enquiries email to <a href="mailto:Marketing@bictory.io">Marketing@bictory.io</a> <br><br>
+							<div class="input-list__subtitle">
+								Reach us if you have any questions or suggestions
+							</div>
+							<form id="form" method="post" action="sendmail.php">
+								<div class="input__wrapper">
+									<input type="text" class="input-" placeholder="Enter Name" required name="name">
+								</div>
+								<div class="input__wrapper">
+									<input type="email" class="input-" placeholder="Email Address" required
+										name="email">
+								</div>
+								<div class="input-wrapper">
+									<textarea rows="5" class="input- textarea-"
+										placeholder="Type your message to us here" required name="text"></textarea>
+								</div>
+								<div class="checkbox-wrapper">
+									<input type="checkbox" class="custom__checkbox" id="custom__checkbox1" checked>
+									<label for="custom__checkbox1" class="reg__label">
+										<span class="custom-checkbox__span">
+											Allow us send you awesome updates.
+										</span>
+									</label>
+								</div>
+								<button type="submit" class="button- button-send__message full__width">
+									SEND MESSAGE
+								</button>
+							</form>
+						</div>
+						<div class="col col-lg-6 col-12">
+							<div class="contact-info">
+								<div class="contact-info__title">
+									Contact Information
+								</div>
+								<div class="contact-info-text">
+									Cross-chain Decentralized Exchange and Crowdfunding, connecting Concordium to
+									Ethereum and Polkadot
+								</div>
+								<div class="contact-info__item">
+									<div>
+										For Marketing & Business Enquiries email to <a
+											href="mailto:Marketing@bictory.io">Marketing@bictory.io</a> <br><br>
 
-											For Investment Enquiries email to <a href="mailto:Business@bictory.io ">Business@bictory.io</a>
-										</div>
+										For Investment Enquiries email to <a
+											href="mailto:Business@bictory.io ">Business@bictory.io</a>
 									</div>
-									<div class="contact__links">
-										<a target="_blank" href="https://www.linkedin.com/company/bictory-finance/" class="contact-link__item">
-											<i class="fab fa-linkedin"></i>
-										</a>
-										<a target="_blank" href="https://twitter.com/Bictory_finance" class="contact-link__item">
-											<i class="fab fa-twitter-square"></i>
-										</a>
-									</div>
+								</div>
+								<div class="contact__links">
+									<a target="_blank" href="https://www.linkedin.com/company/bictory-finance/"
+										class="contact-link__item">
+										<i class="fab fa-linkedin"></i>
+									</a>
+									<a target="_blank" href="https://twitter.com/Bictory_finance"
+										class="contact-link__item">
+										<i class="fab fa-twitter-square"></i>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -1019,154 +1359,163 @@
 				</div>
 			</div>
 		</div>
-		<div class="section-mail">
-			<div class="container">
-				<div class="row">
-					<div class="col col-md-7 col-12 col__center">
-						<div class="input-mail__wrapper">
-							<input type="email" class="input--mail" placeholder="Join our newsletter" />
-							<button class="input-mail__button">
-								<i class="fas fa-paper-plane"></i> Subscribe
-							</button>
-						</div>
+	</div> -->
+	<div class="section-mail">
+		<div class="container">
+			<div class="row">
+				<div class="col col-md-7 col-12 col__center">
+					<div class="input-mail__wrapper">
+						<input type="email" class="input--mail" placeholder="Join our newsletter" />
+						<button class="input-mail__button">
+							<i class="fas fa-paper-plane"></i> Subscribe
+						</button>
 					</div>
 				</div>
 			</div>
 		</div>
-		<footer class="footer">
-			<div class="container">
-				<div class="footer-logo__wrapper">
-					<a href="">
-						<img src="images/logoLight.svg" alt="">
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-logo__wrapper">
+				<a href="">
+					<img src="images/logoLight.svg" alt="">
+				</a>
+			</div>
+			<div class="row">
+				<div class="col col-md-4 col-12">
+					<p class="footer-text">
+						Bictory: Cross-chain Decentralized Exchange and Crowdfunding, connecting Concordium to Ethereum and Polkadot 
+					</p>
+					<p class="footer-text">
+						For all media and investment inquiries please contact:<a
+							href="mailto:Marketing@bictory.io">enquiries@bictory.io </a>
+					</p>
+				</div>
+				<div class="col col-md-2 col-6">
+					<div class="footer-item__title">
+						Company
+					</div>
+					<div class="footer-link__wrapper">
+						<a href="#team" class="footer__link">
+							Team
+						</a>
+					</div>
+					<div class="footer-link__wrapper">
+						<a href="#about" class="footer__link">
+							Technology
+						</a>
+					</div>
+					<div class="footer-link__wrapper">
+						<a href="#products" class="footer__link">
+							Our Products
+						</a>
+					</div>
+				</div>
+				<div class="col col-md-2 col-6">
+					<div class="footer-item__title">
+						Information
+					</div>
+					<div class="footer-link__wrapper">
+						<a href="#contact-us" class="footer__link">
+							Contact Us
+						</a>
+					</div>
+					<div class="footer-link__wrapper">
+						<a href="#about" class="footer__link">
+							How Bictory Works
+						</a>
+					</div>
+					<div class="footer-link__wrapper">
+						<a target="_blank" href="https://bictory.io/b_litepaper.pdf" class="footer__link">
+							Whitepaper
+						</a>
+					</div>
+				</div>
+				<div class="col col-md-2 col-6">
+					<div class="footer-item__title">
+						Sitemap
+					</div>
+					<div class="footer-link__wrapper">
+						<a target="_blank" href="https://bictory.io/privacy_policy.pdf" class="footer__link">
+							Privacy policies
+						</a>
+					</div>
+					<div class="footer-link__wrapper">
+						<a href="" class="footer__link">
+							Terms and conditions
+						</a>
+					</div>
+				</div>
+				<div class="col col-md-2 col-6">
+					<div class="sk-select sk-select--gray">
+						<input type="hidden" name="asd" value="Sort by featured" class="">
+						<span class="sk-select__icon">
+							<i class="fas fa-chevron-down"></i>
+						</span>
+						<div class="language__select">English</div>
+						<ul class="select-bordered__list" style="display: none;">
+							<li>
+								<div class="lang-item"><img src="images/image11.png" alt="" /><a
+										href="index.html">English</a></div>
+							</li>
+							<li>
+								<div class="lang-item"><img src="images/image12.png" alt="" />Korean</div>
+							</li>
+							<li>
+								<div class="lang-item"><img src="images/image13.png" alt="" /><a
+										href="ru.html">Russian</a></div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer__author">
+				<div class="author-link__list">
+					<a href="https://twitter.com/Bictory_finance" target="_blank" class="author__link">
+						<i class="fab fa-twitter-square"></i>
 					</a>
-				</div>
-				<div class="row">
-					<div class="col col-md-4 col-12">
-						<p class="footer-text">
-							Bictory: CEX & DEX Exchange and Crowdfunding Platform for Projects Building on Concordium Blockchain 
-						</p>
-						<p class="footer-text">
-							For Marketing & Business Enquiries email to <a href="mailto:Marketing@bictory.io">Marketing@bictory.io</a> <br><br>
-
-							For Investment Enquiries email to <a href="mailto:Business@bictory.io">Business@bictory.io</a>
-						</p>
-					</div>
-					<div class="col col-md-2 col-6">
-						<div class="footer-item__title">
-							Company
-						</div>
-						<div class="footer-link__wrapper">
-							<a href="#team" class="footer__link">
-								Team
-							</a>
-						</div>
-						<div class="footer-link__wrapper">
-							<a href="#about" class="footer__link">
-								Technology
-							</a>
-						</div>
-						<div class="footer-link__wrapper">
-							<a href="#products" class="footer__link">
-								Products
-							</a>
-						</div>
-					</div>
-					<div class="col col-md-2 col-6">
-						<div class="footer-item__title">
-							Information
-						</div>
-						<div class="footer-link__wrapper">
-							<a href="#contact-us" class="footer__link">
-								Contact Us
-							</a>
-						</div>
-						<div class="footer-link__wrapper">
-							<a href="#about" class="footer__link">
-								How Bictory Works
-							</a>
-						</div>
-						<div class="footer-link__wrapper">
-							<a target="_blank" href="https://bictory.io/b_litepaper.pdf" class="footer__link">
-								Litepaper
-							</a>
-						</div>
-					</div>
-					<div class="col col-md-2 col-6">
-						<div class="footer-item__title">
-							Sitemap
-						</div>
-						<div class="footer-link__wrapper">
-							<a target="_blank" href="https://bictory.io/privacy_policy.pdf" class="footer__link">
-								Privacy Policy
-							</a>
-						</div>
-						<div class="footer-link__wrapper">
-							<a href="" class="footer__link">
-								Terms and Conditions
-							</a>
-						</div>
-					</div>
-					<div class="col col-md-2 col-6">
-						<div class="sk-select sk-select--gray">
-              <input type="hidden" name="asd" value="Sort by featured" class="">
-              <span class="sk-select__icon">
-              	<i class="fas fa-chevron-down"></i>
-              </span>
-              <div class="language__select">English</div>
-              <ul class="select-bordered__list" style="display: none;">
-                <li><div class="lang-item"><img src="images/image11.png" alt="" /><a href="index.html">English</a></div></li>
-                <li><div class="lang-item"><img src="images/image12.png" alt="" />Korean</div></li>
-                <li><div class="lang-item"><img src="images/image13.png" alt="" /><a href="ru.html">Russian</a></div></li>
-              </ul>
-            </div>
-					</div>
-				</div>
-				<div class="footer__author">
-					<div class="author-link__list">
-						<a href="https://twitter.com/Bictory_finance" target="_blank" class="author__link">
-							<i class="fab fa-twitter-square"></i>
-						</a>
-						<a href="https://bictory-finance.medium.com/" target="_blank" class="author__link">
-							<i class="fab fa-medium"></i>
-						</a>
-						<a href="https://t.me/BictoryFinance" target="_blank" class="author__link">
-							<i class="fab fa-telegram"></i>
-						</a>
-						<!-- <a href="https://t.me/bictory_announcement_english" class="author__link">
+					<a href="https://bictory-finance.medium.com/" target="_blank" class="author__link">
+						<i class="fab fa-medium"></i>
+					</a>
+					<a href="https://t.me/BictoryFinance" target="_blank" class="author__link">
+						<i class="fab fa-telegram"></i>
+					</a>
+					<!-- <a href="https://t.me/bictory_announcement_english" class="author__link">
 							<i class="fab fa-telegram-plane"></i>
 						</a> -->
-						<a href="mailto:Marketing@bictory.io" target="_blank" class="author__link">
-							<i class="fas fa-envelope"></i>
-						</a>
-						<a href="https://www.linkedin.com/company/71744301" target="_blank" class="author__link">
-							<i class="fab fa-linkedin"></i>
-						</a>
-					</div>
-					<div>
-						All Rights Reseved Bictory © 2021
-					</div>
+					<a href="mailto:Marketing@bictory.io" target="_blank" class="author__link">
+						<i class="fas fa-envelope"></i>
+					</a>
+					<a href="https://www.linkedin.com/company/71744301" target="_blank" class="author__link">
+						<i class="fab fa-linkedin"></i>
+					</a>
 				</div>
-				<div class="theme-switcher">
-					<label class="switch">
-					  <input type="checkbox" class="switcher__radio">
-					  <span class="slider round"></span>
-					</label>
+				<div>
+					All Rights Reseved Bictory © 2021
 				</div>
 			</div>
-		</footer>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-RHXMWS042Z"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
+			<div class="theme-switcher">
+				<label class="switch">
+					<input type="checkbox" class="switcher__radio">
+					<span class="slider round"></span>
+				</label>
+			</div>
+		</div>
+	</footer>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-RHXMWS042Z"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-		  gtag('config', 'G-RHXMWS042Z');
-		</script>
-		<script src="js/jquery-3.1.1.min.js"></script>
-		<script src="js/popper.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/main.js"></script>
-		<script src="js/slick.min.js"></script>
-	</body>
+		gtag('config', 'G-RHXMWS042Z');
+	</script>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/slick.min.js"></script>
+</body>
+
 </html>
