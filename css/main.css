@@ -499,8 +499,8 @@ textarea {
   resize: none;
 }
 
-.top-0 {
-  top: 50%;
+.top-50 {
+  top: 45%;
   transform: translate(0, -50%);
 }
 .right--25 {
