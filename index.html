@@ -57,6 +57,12 @@
 									Pager</a>
 							</div>
 						</div>
+						<div class="header-switch">
+							<label class="switch">
+							  <input type="checkbox" class="switcher__radio">
+							  <span class="slider round"></span>
+							</label>
+						</div>
 						<!-- <div class="header-switch">
 								<label class="switch">
 								  <input type="checkbox" class="switcher__radio">
@@ -114,8 +120,14 @@
 			Tokenomics
 		</a>
 		<a href="#team" class="header-menu__link">
-				Team
-			</a>
+			Team
+		</a>
+		<div class="header-switch">
+			<label class="switch">
+			  <input type="checkbox" class="switcher__radio">
+			  <span class="slider round"></span>
+			</label>
+		</div>
 		<!-- <a href="#contact-us" class="header-menu__link">
 			Contact us
 		</a> -->
@@ -132,7 +144,7 @@
 						<div class="banner-text">
 							Interoperable, Decentralized, Custodial exchange and decentralized crowdfunding platform on
 							Concordium,
-							coming soon to Ethereum, Polkadot, Solana soon.
+							coming soon to Ethereum, Polkadot, Solana.
 						</div>
 					</div>
 					<div>
@@ -146,7 +158,8 @@
 						</a>
 					</div>
 				</div>
-				<div class="col col-md-7 col-xl-5 col-12 d-md-flex d-none position-absolute top-50 right--15 right-xl--5">
+				<div
+					class="col col-md-7 col-xl-5 col-12 d-md-flex d-none position-absolute top-50 right--15 right-xl--5">
 					<img src="images/section1.png" class="w-100 banner-right-img" alt="img" />
 				</div>
 			</div>
@@ -697,7 +710,8 @@
 						<div class="product__content" id="CustodialExchange">
 							<div class="row">
 								<div class="col col-6 d-none d-md-block">
-									<img src="images/exchange-interface-3.png" id="exchange-interface-3" alt="" class="img-responsive">
+									<img src="images/exchange-interface-3.png" id="exchange-interface-3" alt=""
+										class="img-responsive">
 								</div>
 								<div class="col col-md-6 col-12">
 									<div class="product-content__title">
@@ -842,14 +856,20 @@
 	<div class="section- section_partners-and-investors">
 		<div class="container position-relative">
 			<div class="little-title">
-				Partners and investors
+				Partners and Investors
 			</div>
 			<div class="row partners-investors-list">
 				<div class="col-md-4 col-12 partners-investors">
-					<img src="images/partner-investror-1.png" alt="Partner and investor" />
+					<img src="images/partner-investror-1-grey.png" alt="Partner and investor" onmouseover="this.src='images/partner-investror-1.png';" onmouseout="this.src='images/partner-investror-1-grey.png';"/>
 				</div>
 				<div class="col-md-4 col-12 partners-investors">
-					<img src="images/partner-investror-2.png" id="partner-investror-2" alt="Partner and investor" />
+					<img src="images/partner-investror-2-grey.png" alt="Partner and investor" onmouseover="this.src='images/partner-investror-2.png';" onmouseout="this.src='images/partner-investror-2-grey.png';" id="partner-investror-2" alt="Partner and investor" />
+				</div>
+				<div class="col-md-4 col-12 partners-investors">
+					<img src="images/partner-investror-3-grey.png" alt="Partner and investor" onmouseover="this.src='images/partner-investror-3.png';" onmouseout="this.src='images/partner-investror-3-grey.png';" id="partner-investror-3"/>
+				</div>
+				<div class="col-md-4 col-12 partners-investors">
+					<img src="images/partner-investror-4-grey.png" alt="Partner and investor" onmouseover="this.src='images/partner-investror-4.png';" onmouseout="this.src='images/partner-investror-4-grey.png';"/>
 				</div>
 			</div>
 		</div>
@@ -1050,7 +1070,7 @@
 								<div class="distr-item">
 									<div class="distr-item__color distr-item__color--community-reward"></div>
 									<div class="distr-item__title">
-										Community Reward: 
+										Community Reward:
 									</div>
 									<div class="distr-item__count">
 										25% (25 Million tokens)
@@ -1365,8 +1385,9 @@
 			<div class="row">
 				<div class="col col-md-7 col-12 col__center">
 					<div class="input-mail__wrapper">
-						<input type="email" class="input--mail" placeholder="Join our newsletter" />
-						<button class="input-mail__button">
+						<input type="email" id="subscribeInput" name="email" required class="input--mail"
+							placeholder="Join our newsletter" />
+						<button id="subscribeButton" class="input-mail__button" type="button">
 							<i class="fas fa-paper-plane"></i> Subscribe
 						</button>
 					</div>
@@ -1384,7 +1405,8 @@
 			<div class="row">
 				<div class="col col-md-4 col-12">
 					<p class="footer-text">
-						Bictory: Cross-chain Decentralized Exchange and Crowdfunding, connecting Concordium to Ethereum and Polkadot 
+						Bictory: Cross-chain Decentralized Exchange and Crowdfunding, connecting Concordium to Ethereum
+						and Polkadot
 					</p>
 					<p class="footer-text">
 						For all media and investment inquiries please contact:<a
@@ -1502,6 +1524,24 @@
 			</div>
 		</div>
 	</footer>
+	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<img src="images/close.svg" alt="X" />
+					</button>
+					<img class="modal-image" src="images/modal-image.svg" alt="Image" />
+					<h2 class="modal-title">Subscribed Successfully</h2>
+					<p class="modal-text"> Awesome! You have subscribed to our mailing list.</p>
+					<div class="modal-buttons" data-dismiss="modal" aria-label="Close">
+						<button type="button" class="btn button- ">OKAY, THANKS</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-RHXMWS042Z"></script>
 	<script>
@@ -1510,6 +1550,7 @@
 		gtag('js', new Date());
 
 		gtag('config', 'G-RHXMWS042Z');
+
 	</script>
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/popper.min.js"></script>

@@ -596,8 +596,6 @@ textarea {
 .header-menu {
   display: flex;
   column-gap: 50px;
-  width: 85ch;
-  padding-left: 30px;
   align-items: center;
 }
 .header-dropdown > a {
@@ -1082,7 +1080,8 @@ a.orange__link {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 25px 60px;
+  margin-top: 40px;
 }
 .chain-list__item {
   display: inline-flex;
@@ -1147,11 +1146,13 @@ a.orange__link {
 }
 .partners-investors-list {
   padding: 50px 0;
-  row-gap: 40px;
+  row-gap: 60px;
 }
 
 .partners-investors {
   padding-right: 72px;
+  display: flex;
+  align-items: center;
 }
 .partners-investors img {
   width: 100%;
@@ -1758,7 +1759,7 @@ div.language__select {
   .container {
     max-width: 1200px;
   }
-  .h-md-50{
+  .h-md-50 {
     height: 50%;
   }
 }
@@ -1869,6 +1870,57 @@ div.language__select {
 .header-content__right {
   display: inline-flex;
   align-items: center;
+}
+.modal .modal-content {
+  background: #05202f;
+}
+
+.modal .modal-body {
+  padding: 36px 43px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  align-items: center;
+}
+
+.modal .modal-body .close {
+  width: 32px;
+  height: 32px;
+  opacity: 1;
+  margin-left: auto;
+}
+.modal .modal-body .close img {
+  width: 100%;
+  height: 100%;
+}
+.modal .modal-body .modal-image {
+  max-width: 244px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 53px;
+}
+.modal .modal-body .modal-title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 31px;
+  margin-bottom: 20px;
+}
+
+.modal .modal-body .modal-text {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+
+.modal .modal-body .modal-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.modal .modal-body .button- {
+  max-width: 300px;
+  width: 100%;
 }
 .light-theme .section--about {
   /* background: #f3f3f3; */
@@ -1982,7 +2034,6 @@ div.language__select {
   color: #494949;
 }
 .light-theme .input--mail {
-
   background: #ffffff;
   color: #02002b;
   border: 0.5px solid #eeb31d;
@@ -2022,6 +2073,15 @@ div.language__select {
 .light-theme .distr-item__title {
   color: #022436;
 }
+
+.light-theme .modal .modal-content {
+  background: #F3F3F3;
+}
+
+.light-theme .modal .modal-body {
+  color: #02002B;
+}
+  
 .theme-switcher {
   padding: 15px 0;
 }
@@ -2074,7 +2134,7 @@ div.language__select {
 }
 
 .switcher__radio:checked + .slider {
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   background-image: url(../images/switcher-dark.png);
   background-position: 20%;
 }
@@ -2208,31 +2268,31 @@ div.language__select {
   .about-item .check-circle-icon {
     display: none;
   }
-  .banner- .banner-left__button{
+  .banner- .banner-left__button {
     padding: 9px 15px;
     margin-right: 10px;
     margin-top: 15px;
   }
-  .banner- .banner-right__button{
+  .banner- .banner-right__button {
     padding: 9px 10px;
     margin-top: 15px;
   }
   .section-subtitle {
     margin-top: 0;
   }
-  .banner-right-img{
+  .banner-right-img {
     width: 120%;
   }
 }
-@media(max-width: 768px){
-  .header-logo__wrapper{
+@media (max-width: 768px) {
+  .header-logo__wrapper {
     margin-right: 0px;
     width: auto;
   }
-  .banner-text{
+  .banner-text {
     margin-bottom: 0;
   }
-  .banner- .button-{
+  .banner- .button- {
     margin-top: 20px;
     margin-right: 15px;
     font-size: 14px;
@@ -2243,7 +2303,7 @@ div.language__select {
   .banner- .banner-right__button {
     padding: 7px 10px;
   }
-  .banner-{
+  .banner- {
     background-size: auto 110%;
   }
 
@@ -2258,7 +2318,7 @@ div.language__select {
     padding: 6px 12px;
   }
 
-  .product__nav{
+  .product__nav {
     margin-bottom: 25px;
   }
   .partners-investors-list {
@@ -2275,7 +2335,7 @@ div.language__select {
   .section-title {
     margin-bottom: 30px;
   }
-  .token-item__list{
+  .token-item__list {
     margin-bottom: 40px;
   }
   .token-item__label {
@@ -2287,7 +2347,7 @@ div.language__select {
     margin-left: 0px;
   }
 
-  .section-subtitle{
+  .section-subtitle {
     width: auto;
     margin-top: 0;
   }
