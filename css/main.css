@@ -500,15 +500,30 @@ textarea {
 }
 
 .top-50 {
-  top: 45%;
+  top: 55%;
   transform: translate(0, -50%);
 }
-.right--25 {
+.right--15 {
   right: -15%;
 }
+
 @media (min-width: 1200px) {
   .container__fluid {
     width: 100%;
+  }
+  .banner-right-img {
+    width: 130% !important;
+  }
+  .right-xl--5 {
+    right: -5%;
+  }
+}
+@media (max-width: 1500px) and (min-width: 1200px) {
+  .banner-right-img {
+    width: 150% !important;
+  }
+  .right-xl--5 {
+    right: 3%;
   }
 }
 .vertical-align__wrap {
@@ -2204,6 +2219,9 @@ div.language__select {
   }
   .section-subtitle {
     margin-top: 0;
+  }
+  .banner-right-img{
+    width: 120%;
   }
 }
 @media(max-width: 768px){
