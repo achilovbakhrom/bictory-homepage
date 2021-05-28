@@ -1134,9 +1134,9 @@ a.orange__link {
 }
 
 .section_partners-and-investors {
-  background: url("../images/partners-investors-back.png");
+  /* background: url("../images/partners-investors-back.png");
   background-size: cover;
-  background-position: center bottom;
+  background-position: center bottom; */
   position: relative;
   z-index: 1;
 }
@@ -1155,8 +1155,8 @@ a.orange__link {
   align-items: center;
 }
 .partners-investors img {
-  width: 100%;
-  height: auto;
+  /* width: 100%; */
+  /* height: auto; */
 }
 .section_partners-and-investors:before {
   content: "";
@@ -2350,6 +2350,10 @@ div.language__select {
   .section-subtitle {
     width: auto;
     margin-top: 0;
+  }
+  .partners-investors img{
+    width: 100%;
+    height: auto;
   }
 }
 
