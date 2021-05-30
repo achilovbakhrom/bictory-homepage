@@ -133,7 +133,10 @@ $(function () {
     }
   });
   
-
+  function validateEmail(email) {
+    const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+  }
   async function sendEmail(url = '', data = {}) {
     const response = await fetch(url, {
       method: 'POST',
@@ -152,14 +155,19 @@ $(function () {
   }
   $("#subscribeButton").on("click", function handleClick(e) {
     e.preventDefault();
-    $('#exampleModalCenter').modal('show')
-    const email = $('#subscribeInput').val();
-    console.log(email);
-    sendEmail('https://deck.bictory.io/home-email', { email: email })
-    .then((data) => {
-      console.log(data); 
-      $('#subscribeInput').val("");
-    });
+   
+    const email = $('#subscribeInput').val().trim();
+    if(validateEmail(email)) {
+      $('#subscribeInput').css('border-color', '#3c3d4e');
+      sendEmail('https://deck.bictory.io/home-email', { email: email })
+      .then(() => {
+        $('#exampleModalCenter').modal('show');
+        $('#subscribeInput').val("");
+      });
+    }else{
+      $('#subscribeInput').css('border-color', 'red');
+    }
+    
   })
  
 });
