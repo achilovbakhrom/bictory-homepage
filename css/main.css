@@ -1153,6 +1153,7 @@ a.orange__link {
   padding-right: 72px;
   display: flex;
   align-items: center;
+  row-gap: 20px;
 }
 .partners-investors img {
   /* width: 100%; */
@@ -2291,20 +2292,21 @@ div.language__select {
   }
   .banner-text {
     margin-bottom: 0;
+    width: 100%;
   }
   .banner- .button- {
     margin-top: 20px;
-    margin-right: 15px;
+    margin-right: 5px;
     font-size: 14px;
   }
   .banner- .banner-left__button {
-    padding: 7px 30px;
+    padding: 5px 5px;
   }
   .banner- .banner-right__button {
-    padding: 7px 10px;
+    padding: 5px 5px;
   }
   .banner- {
-    background-size: auto 110%;
+    background-size: auto 130%;
   }
 
   .article__title {
@@ -2327,6 +2329,12 @@ div.language__select {
   .partners-investors {
     padding-right: 25px;
     padding-left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .partners-investors img{
+    width: 60%;
   }
 
   .roadmap__block > img {
@@ -2352,7 +2360,7 @@ div.language__select {
     margin-top: 0;
   }
   .partners-investors img{
-    width: 100%;
+    width: 80%;
     height: auto;
   }
 }
