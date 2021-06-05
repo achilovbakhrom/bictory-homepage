@@ -562,11 +562,7 @@ textarea {
 .full__width {
   width: 100%;
 }
-@media (max-width: 630px) {
-  .mob-full__width {
-    width: 100%;
-  }
-}
+
 .header {
   background: transparent;
   position: relative;
@@ -973,6 +969,7 @@ textarea {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
 }
 .benefit-item-img {
   background: #0c2b3c;
@@ -1004,7 +1001,6 @@ textarea {
 }
 .benefit-list .row {
   display: flex;
-  row-gap: 60px;
 }
 .read-more__link {
   color: #fff;
@@ -2164,10 +2160,12 @@ div.language__select {
     display: none;
   }
   .about-item {
-    padding-left: 20px;
+    padding-left: 82px;
+    padding-right: 15px;
   }
   .about-item__img {
-    display: none;
+    /* display: none; */
+    width: 74px;
   }
   .button-collapse__wrapper {
     display: inline-flex;
@@ -2226,7 +2224,6 @@ div.language__select {
     margin-bottom: 30px;
   }
   .product__link {
-    font-size: 12px;
     text-align: center;
     display: inline-flex;
     align-items: center;
@@ -2266,7 +2263,7 @@ div.language__select {
     padding: 7.2px 15px;
   }
   .about-item .check-circle-icon {
-    display: none;
+    /* display: none; */
   }
   .banner- .banner-left__button {
     padding: 9px 15px;
@@ -2285,6 +2282,9 @@ div.language__select {
   }
 }
 @media (max-width: 768px) {
+  .product__content {
+    display: block;
+  }
   .header-logo__wrapper {
     margin-right: 0px;
     width: auto;
@@ -2314,11 +2314,9 @@ div.language__select {
   .products-box {
     padding: 40px 0;
   }
-  .product__link {
-    padding: 6px 12px;
-  }
 
   .product__nav {
+    display: none;
     margin-bottom: 25px;
   }
   .partners-investors-list {
@@ -2355,6 +2353,24 @@ div.language__select {
     width: 100%;
     height: auto;
   }
+  .input-mail__wrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+  .input--mail {
+    width: 100%;
+    margin-bottom: 24px;
+    border-radius: 6px;
+    height: 50px;
+  }
+  .input-mail__button {
+    width: 100%;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+  }
 }
 
 body {
@@ -2363,4 +2379,13 @@ body {
 
 body.light-theme {
   background: #fbfbfb;
+}
+@media (max-width: 630px) {
+  .mob-full__width {
+    width: 100%;
+  }
+  .benefit-item__title {
+    font-size: 12px;
+  }
+  
 }
