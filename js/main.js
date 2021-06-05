@@ -92,29 +92,51 @@ $(function () {
       $("#exchange-interface-3").attr("src", "images/exchange-interface-3.png");
     }
     if (
-      $("#partner-investror-2").attr("src") == "images/partner-investror-2-grey.png"
+      $("#partner-investror-2").attr("src") ==
+      "images/partner-investror-2-grey.png"
     ) {
       $("#partner-investror-2").attr(
         "onmouseover",
         "this.src='images/partner-investror-2-light.png'"
       );
     } else {
-      $("#partner-investror-2").attr("onmouseover", "this.src='images/partner-investror-2.png'");
+      $("#partner-investror-2").attr(
+        "onmouseover",
+        "this.src='images/partner-investror-2.png'"
+      );
     }
     if (
-      $("#partner-investror-3").attr("src") == "images/partner-investror-3-grey.png"
+      $("#partner-investror-3").attr("src") ==
+      "images/partner-investror-3-grey.png"
     ) {
       $("#partner-investror-3").attr(
         "onmouseover",
         "this.src='images/partner-investror-3-light.png'"
       );
     } else {
-      $("#partner-investror-3").attr("onmouseover", "this.src='images/partner-investror-3.png'");
+      $("#partner-investror-3").attr(
+        "onmouseover",
+        "this.src='images/partner-investror-3.png'"
+      );
     }
-    if ($("#roadmap-image").attr("src") == "images/roadmap.svg") {
-      $("#roadmap-image").attr("src", "images/raadmap-light.svg");
+    if ($(window).width() < 768) {
+      if (
+        $("#roadmap-image").attr("src") == "images/roadmap-mobile.svg" ||
+        $("#roadmap-image").attr("src") == "images/roadmap.svg"
+      ) {
+        $("#roadmap-image").attr("src", "images/roadmap-mobile-light.svg");
+      } else {
+        $("#roadmap-image").attr("src", "images/roadmap-mobile.svg");
+      }
     } else {
-      $("#roadmap-image").attr("src", "images/roadmap.svg");
+      if (
+        $("#roadmap-image").attr("src") == "images/roadmap.svg" ||
+        $("#roadmap-image").attr("src") == "images/roadmap-mobile.svg"
+      ) {
+        $("#roadmap-image").attr("src", "images/roadmap-light.svg");
+      } else {
+        $("#roadmap-image").attr("src", "images/roadmap.svg");
+      }
     }
     if ($("#tokenomics-diagram").attr("src") == "images/piechart.svg") {
       $("#tokenomics-diagram").attr("src", "images/piechart-light.svg");
@@ -132,42 +154,74 @@ $(function () {
       $("#banner-image").addClass("banner-image--light");
     }
   });
-  
+
+  $(window).resize(function (e) {
+    e.preventDefault();
+    if ($(window).width() < 768) {
+      $("#logo").attr("src", "images/logo.svg");
+      if (!$(".root").hasClass("light-theme")) {
+        $("#roadmap-image").attr("src", "images/roadmap-mobile-light.svg");
+      } else {
+        $("#roadmap-image").attr("src", "images/roadmap-mobile.svg");
+      }
+    } else {
+      $("#logo").attr("src", "images/logoLight.svg");
+      if (!$(".root").hasClass("light-theme")) {
+        $("#roadmap-image").attr("src", "images/roadmap-light.svg");
+      } else {
+        $("#roadmap-image").attr("src", "images/roadmap.svg");
+      }
+    }
+  });
+  if ($(window).width() < 768) {
+    $("#logo").attr("src", "images/logo.svg");
+    if (!$(".root").hasClass("light-theme")) {
+      $("#roadmap-image").attr("src", "images/roadmap-mobile-light.svg");
+    } else {
+      $("#roadmap-image").attr("src", "images/roadmap-mobile.svg");
+    }
+  } else {
+    $("#logo").attr("src", "images/logoLight.svg");
+    if (!$(".root").hasClass("light-theme")) {
+      $("#roadmap-image").attr("src", "images/roadmap-light.svg");
+    } else {
+      $("#roadmap-image").attr("src", "images/roadmap.svg");
+    }
+  }
   function validateEmail(email) {
-    const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    const re =
+      /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
   }
-  async function sendEmail(url = '', data = {}) {
+  async function sendEmail(url = "", data = {}) {
     const response = await fetch(url, {
-      method: 'POST',
-      mode: 'cors', 
-      cache: 'no-cache', 
-      credentials: 'same-origin', 
+      method: "POST",
+      mode: "cors",
+      cache: "no-cache",
+      credentials: "same-origin",
       headers: {
-        'Content-Type': 'application/json'
-        
+        "Content-Type": "application/json",
       },
-      redirect: 'follow', 
-      referrerPolicy: 'no-referrer', 
-      body: JSON.stringify(data) 
+      redirect: "follow",
+      referrerPolicy: "no-referrer",
+      body: JSON.stringify(data),
     });
-    return await response.json(); 
+    return await response.json();
   }
   $("#subscribeButton").on("click", function handleClick(e) {
     e.preventDefault();
-   
-    const email = $('#subscribeInput').val().trim();
-    if(validateEmail(email)) {
-      $('#subscribeInput').css('border-color', '#3c3d4e');
-      sendEmail('https://deck.bictory.io/home-email', { email: email })
-      .then(() => {
-        $('#exampleModalCenter').modal('show');
-        $('#subscribeInput').val("");
-      });
-    }else{
-      $('#subscribeInput').css('border-color', 'red');
+
+    const email = $("#subscribeInput").val().trim();
+    if (validateEmail(email)) {
+      $("#subscribeInput").css("border-color", "#3c3d4e");
+      sendEmail("https://deck.bictory.io/home-email", { email: email }).then(
+        () => {
+          $("#exampleModalCenter").modal("show");
+          $("#subscribeInput").val("");
+        }
+      );
+    } else {
+      $("#subscribeInput").css("border-color", "red");
     }
-    
-  })
- 
+  });
 });

@@ -1149,11 +1149,14 @@ a.orange__link {
   padding-right: 72px;
   display: flex;
   align-items: center;
+  row-gap: 20px;
 }
-.partners-investors img {
-  /* width: 100%; */
-  /* height: auto; */
+
+.partners-investors .partners-investors-img {
+  width: 100%;
+  height: auto;
 }
+
 .section_partners-and-investors:before {
   content: "";
   position: absolute;
@@ -1857,7 +1860,7 @@ div.language__select {
 .header-button__collapse {
   background: transparent;
   font-size: 25px;
-  color: #fff;
+  color: #000;
   border: none;
 }
 .button-collapse__wrapper {
@@ -2071,13 +2074,13 @@ div.language__select {
 }
 
 .light-theme .modal .modal-content {
-  background: #F3F3F3;
+  background: #f3f3f3;
 }
 
 .light-theme .modal .modal-body {
-  color: #02002B;
+  color: #02002b;
 }
-  
+
 .theme-switcher {
   padding: 15px 0;
 }
@@ -2159,6 +2162,15 @@ div.language__select {
   .header-menu {
     display: none;
   }
+  .header {
+    background: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative !important;
+  }
+  .header-dropdown {
+    display: none;
+  }
   .about-item {
     padding-left: 82px;
     padding-right: 15px;
@@ -2190,7 +2202,7 @@ div.language__select {
     max-width: 100px;
   }
   .banner-title {
-    font-size: 30px;
+    font-size: 34px;
   }
   .banner-text {
     font-size: 14px;
@@ -2291,22 +2303,50 @@ div.language__select {
   }
   .banner-text {
     margin-bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .banner-title {
+    text-align: center;
   }
   .banner- .button- {
-    margin-top: 20px;
-    margin-right: 15px;
     font-size: 14px;
+    max-width: 200px;
+    width: 100%;
+    margin: 0;
+    padding: 11px 22px;
+  }
+  .banner-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   .banner- .banner-left__button {
-    padding: 7px 30px;
+    margin: 50px 0 31px;
   }
   .banner- .banner-right__button {
-    padding: 7px 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  .banner- .banner-right__button .fas{
+    display: none;
   }
   .banner- {
-    background-size: auto 110%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-size: auto 105%;
   }
-
+  .banner- .row {
+    justify-content: center;
+  }
+  .right-img {
+    position: relative !important;
+    top: inherit;
+    right: 0;
+    bottom: -50px;
+    transform: translate(0);
+  }
   .article__title {
     line-height: 40px;
   }
@@ -2325,6 +2365,14 @@ div.language__select {
   .partners-investors {
     padding-right: 25px;
     padding-left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .partners-investors .partners-investors-img,
+  .partners-investors img {
+    width: 60%;
   }
 
   .roadmap__block > img {
@@ -2349,8 +2397,9 @@ div.language__select {
     width: auto;
     margin-top: 0;
   }
-  .partners-investors img{
-    width: 100%;
+  .partners-investors .partners-investors-img,
+  .partners-investors img {
+    width: 80%;
     height: auto;
   }
   .input-mail__wrapper {
@@ -2371,6 +2420,12 @@ div.language__select {
     height: 50px;
     align-items: center;
   }
+  .read-more__link {
+    color: #000;
+  }
+  .read-more__link .link__decor {
+    width: 139%;
+  }
 }
 
 body {
@@ -2387,5 +2442,4 @@ body.light-theme {
   .benefit-item__title {
     font-size: 12px;
   }
-  
 }
