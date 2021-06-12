@@ -119,6 +119,34 @@ $(function () {
         "this.src='images/partner-investror-3.png'"
       );
     }
+    if (
+      $("#partner-investror-5").attr("src") ==
+      "images/partner-investror-5-grey.png"
+    ) {
+      $("#partner-investror-5").attr(
+        "onmouseover",
+        "this.src='images/partner-investror-5-light.png'"
+      );
+    } else {
+      $("#partner-investror-5").attr(
+        "onmouseover",
+        "this.src='images/partner-investror-5.png'"
+      );
+    }
+    if (
+      $("#partner-investror-7").attr("src") ==
+      "images/partner-investror-7-grey.png"
+    ) {
+      $("#partner-investror-7").attr(
+        "onmouseover",
+        "this.src='images/partner-investror-7-light.png'"
+      );
+    } else {
+      $("#partner-investror-7").attr(
+        "onmouseover",
+        "this.src='images/partner-investror-7.png'"
+      );
+    }
     if ($(window).width() < 768) {
       if (
         $("#roadmap-image").attr("src") == "images/roadmap-mobile.svg" ||
@@ -157,15 +185,18 @@ $(function () {
 
   $(window).resize(function (e) {
     e.preventDefault();
-    if ($(window).width() < 768) {
+    if ($(window).width() < 1200) {
       $("#logo").attr("src", "images/logo.svg");
+    } else {
+      $("#logo").attr("src", "images/logoLight.svg");
+    }
+    if ($(window).width() < 768) {
       if (!$(".root").hasClass("light-theme")) {
         $("#roadmap-image").attr("src", "images/roadmap-mobile-light.svg");
       } else {
         $("#roadmap-image").attr("src", "images/roadmap-mobile.svg");
       }
     } else {
-      $("#logo").attr("src", "images/logoLight.svg");
       if (!$(".root").hasClass("light-theme")) {
         $("#roadmap-image").attr("src", "images/roadmap-light.svg");
       } else {
@@ -173,15 +204,18 @@ $(function () {
       }
     }
   });
-  if ($(window).width() < 768) {
+  if ($(window).width() < 1200) {
     $("#logo").attr("src", "images/logo.svg");
+  } else {
+    $("#logo").attr("src", "images/logoLight.svg");
+  }
+  if ($(window).width() < 768) {
     if (!$(".root").hasClass("light-theme")) {
       $("#roadmap-image").attr("src", "images/roadmap-mobile-light.svg");
     } else {
       $("#roadmap-image").attr("src", "images/roadmap-mobile.svg");
     }
   } else {
-    $("#logo").attr("src", "images/logoLight.svg");
     if (!$(".root").hasClass("light-theme")) {
       $("#roadmap-image").attr("src", "images/roadmap-light.svg");
     } else {

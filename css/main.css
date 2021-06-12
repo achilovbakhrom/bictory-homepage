@@ -1143,18 +1143,20 @@ a.orange__link {
 .partners-investors-list {
   padding: 50px 0;
   row-gap: 60px;
+  column-gap: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .partners-investors {
-  padding-right: 72px;
   display: flex;
   align-items: center;
-  row-gap: 20px;
 }
 
 .partners-investors .partners-investors-img {
-  width: 100%;
-  height: auto;
+
 }
 
 .section_partners-and-investors:before {
@@ -2363,8 +2365,6 @@ div.language__select {
     padding: 25px 0;
   }
   .partners-investors {
-    padding-right: 25px;
-    padding-left: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
