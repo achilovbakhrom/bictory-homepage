@@ -134,6 +134,20 @@ $(function () {
       );
     }
     if (
+      $("#partner-investror-6").attr("src") ==
+      "images/partner-investror-6-grey.png"
+    ) {
+      $("#partner-investror-6").attr(
+        "onmouseover",
+        "this.src='images/partner-investror-6-light.png'"
+      );
+    } else {
+      $("#partner-investror-5").attr(
+        "onmouseover",
+        "this.src='images/partner-investror-5.png'"
+      );
+    }
+    if (
       $("#partner-investror-7").attr("src") ==
       "images/partner-investror-7-grey.png"
     ) {
