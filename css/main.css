@@ -1142,17 +1142,16 @@ a.orange__link {
 }
 .partners-investors-list {
   padding: 50px 0;
-  row-gap: 60px;
-  column-gap: 60px;
-  display: flex;
+  display: inline-block;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .partners-investors {
-  display: flex;
+  display: inline-block;
   align-items: center;
+  margin: 30px 25px;
 }
 
 .partners-investors .partners-investors-img {
@@ -1436,6 +1435,12 @@ a.orange__link {
   font-weight: 600;
   color: #3bf1a5;
 }
+.respective-position {
+  font-size: 11px;
+  color: #bdbdbd;
+  margin-bottom: 6px;
+}
+
 .member-position {
   font-size: 13px;
   color: #bdbdbd;
@@ -2363,11 +2368,12 @@ div.language__select {
   }
   .partners-investors-list {
     padding: 25px 0;
+    display: flex;
+    flex-direction: column;
   }
   .partners-investors {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 25px auto;
+    display: block;
   }
 
   .partners-investors .partners-investors-img,
