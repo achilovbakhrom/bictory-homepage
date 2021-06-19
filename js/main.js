@@ -142,9 +142,9 @@ $(function () {
         "this.src='images/partner-investror-6-light.png'"
       );
     } else {
-      $("#partner-investror-5").attr(
+      $("#partner-investror-6").attr(
         "onmouseover",
-        "this.src='images/partner-investror-5.png'"
+        "this.src='images/partner-investror-6.png'"
       );
     }
     if (
@@ -159,6 +159,20 @@ $(function () {
       $("#partner-investror-7").attr(
         "onmouseover",
         "this.src='images/partner-investror-7.png'"
+      );
+    }
+    if (
+      $("#partner-investror-8").attr("src") ==
+      "images/partner-investror-8-grey.png"
+    ) {
+      $("#partner-investror-8").attr(
+        "onmouseover",
+        "this.src='images/partner-investror-8-light.png'"
+      );
+    } else {
+      $("#partner-investror-8").attr(
+        "onmouseover",
+        "this.src='images/partner-investror-8.png'"
       );
     }
     if ($(window).width() < 768) {
