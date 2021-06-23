@@ -1402,6 +1402,7 @@ a.orange__link {
 }
 .member-item {
   width: 100%;
+  min-height: 500px;
   margin: auto;
   text-align: center;
   margin-top: 90px;
@@ -1410,6 +1411,7 @@ a.orange__link {
   border-radius: 4px;
   padding: 25px;
   border: 0.5px solid #3c3c3c;
+  position: relative;
 }
 .member-image__wrapper {
   margin-bottom: 12px;
@@ -1449,7 +1451,7 @@ a.orange__link {
   color: #f2f2f2;
   font-size: 14px;
   font-weight: 500;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   text-align: justify;
 }
 
@@ -1598,6 +1600,11 @@ a.orange__link {
   color: #ffb703;
   font-size: 31px;
   margin-left: 28px;
+}
+.member-links {
+  position: absolute;
+  bottom: 20px;
+  width: calc(100% - 50px);
 }
 .member-links > a {
   color: #ffbb00;
@@ -2694,6 +2701,13 @@ div.language__select {
   .section--team .carousel-item .right-cont .bottom-elements .socials a {
     margin-left: 0;
     margin-right: 28px;
+  }
+  .member-item {
+    min-height: auto;
+  }
+  .member-links {
+    position: static;
+    width: 100%;
   }
 }
 
