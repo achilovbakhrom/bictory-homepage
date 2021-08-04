@@ -591,7 +591,7 @@ textarea {
 }
 .header-menu {
   display: flex;
-  column-gap: 50px;
+  column-gap: 35px;
   align-items: center;
 }
 .header-dropdown > a {
@@ -844,7 +844,7 @@ textarea {
   margin-top: 100px;
 }
 .header-logo__wrapper {
-  margin-right: 60px;
+  margin-right: 45px;
   width: 150px;
 }
 .header-logo__wrapper img {
@@ -1935,11 +1935,14 @@ div.language__select {
 }
 .footer-text > a {
   color: #eeb31d;
+  font-weight: 700;
+
 }
 .footer-item__title {
   color: #eeb31d;
   flex-wrap: 900;
   font-size: 16px;
+  font-weight: 900;
   margin-bottom: 15px;
 }
 .footer-link__wrapper {
@@ -1948,6 +1951,7 @@ div.language__select {
 .footer__link {
   font-size: 16px;
   color: #fff;
+  font-weight: 400;
 }
 .sk-select__icon {
   position: absolute;
@@ -1963,7 +1967,7 @@ div.language__select {
   align-items: center;
 }
 .author__link {
-  color: #bdbdbd;
+  color: #FFB703;
   margin-right: 10px;
   font-size: 30px;
 }
